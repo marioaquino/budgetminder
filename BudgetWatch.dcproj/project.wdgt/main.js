@@ -123,7 +123,7 @@ function setGaugeValue (gaugeId, value)
 function updateGauge(event) {
     var val = getExpenseValue();
 	if (val.length > 0) {
-    	budgetMonitor.callWithParam(val);
+    	budgetMonitor.callWithParam('expense ' + val);
     	clearTextField();
 	}
 }
@@ -247,6 +247,8 @@ function showFront(event)
     var front = document.getElementById("front");
     var back = document.getElementById("back");
 
+	updateConfigSettings();
+
     if (window.widget) {
         widget.prepareForTransition("ToFront");
     }
@@ -257,6 +259,12 @@ function showFront(event)
     if (window.widget) {
         setTimeout('widget.performTransition();', 0);
     }
+}
+
+function updateConfigSettings() {
+	var budget = 'budget=' + getTextValue("textfield-monthly-budget");
+	var cycleDate = 'cycleDate=' + getTextValue("textfield-cycle-date");
+    budgetMonitor.callWithParam("update '" + budget + "' " + cycleDate);
 }
 
 if (window.widget)

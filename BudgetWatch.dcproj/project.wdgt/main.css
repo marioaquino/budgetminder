@@ -163,9 +163,9 @@ body {
     color: rgb(255, 255, 255);
     font-size: 8pt;
     left: 39px;
-    top: 128px;
+    top: 120px;
     width: auto;
-    bottom: 174px;
+    bottom: 182px;
     height: auto;
 }
 
@@ -304,10 +304,10 @@ body {
     font-size: 8pt;
     color: rgb(255, 255, 255);
     left: 39px;
-    top: 188px;
+    top: 166px;
     right: 146px;
     width: auto;
-    bottom: 114px;
+    bottom: 136px;
     height: auto;
 }
 
@@ -318,7 +318,7 @@ body {
     font-size: 10pt;
     width: 72px;
     left: 39px;
-    top: 141px;
+    top: 133px;
 }
 
 #textfield-cycle-date {
@@ -327,8 +327,8 @@ body {
     font-family: HelveticaNeue;
     font-size: 10pt;
     left: 39px;
-    top: 200px;
     width: 76px;
+    top: 178px;
 }
 
 #textfield-expense {
@@ -347,7 +347,34 @@ body {
     right: auto;
     bottom: auto;
     margin-top: 0px;
-    left: 185px;
-    top: 141px;
     opacity: 1;
+    top: 211px;
+    left: 145px;
+}
+
+#checkboxbutton {
+    width: 80px;
+    font-family: HelveticaNeue;
+    font-size: 10pt;
+    height: 18px;
+    position: absolute;
+    right: auto;
+    bottom: auto;
+    margin-top: 0px;
+    left: 39px;
+    top: 216px;
+}
+
+#text8 {
+    position: absolute;
+    text-align: left;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    top: 2px;
+    left: 18px;
+    right: -13px;
+    width: auto;
+    bottom: 0px;
+    height: auto;
 }

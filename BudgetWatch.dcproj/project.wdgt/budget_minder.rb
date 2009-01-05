@@ -44,7 +44,15 @@ class BudgetMinder
   def cycle_end_date
     ws[2, 6]
   end
-
+  
+  def cycle_end_date=(value)
+    ws[2, 6] = value
+  end
+  
+  def save
+    ws.synchronize
+  end
+  
   def days_until_end_of_cycle
     (Date.parse(cycle_end_date) - Date.today).to_i
   end

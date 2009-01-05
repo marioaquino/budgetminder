@@ -23,15 +23,15 @@
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>2</integer>
+	<integer>0</integer>
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>fbe8e4f9c022ae41</string>
+		<string>1093c8746c23ae41</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
-		<string>/private/var/folders/60/60ba6QDeGi82vEVEFQsVck+++TI/-Tmp-/Dashcode/.BudgetWatch.dcprojGsUeOm/BudgetWatch.dcproj/project.wdgt/</string>
+		<string>/private/var/folders/60/60ba6QDeGi82vEVEFQsVck+++TI/-Tmp-/Dashcode/.BudgetWatch.dcprojPmetYz/BudgetWatch.dcproj/project.wdgt/</string>
 		<key>percent-offset-x</key>
 		<integer>0</integer>
 		<key>percent-offset-y</key>
@@ -107,13 +107,14 @@
 			<integer>0</integer>
 			<integer>1</integer>
 		</array>
-	</array>
-	<key>Objects view last selections</key>
-	<array>
 		<array>
-			<integer>2</integer>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>11</integer>
 		</array>
 	</array>
+	<key>Objects view last selections</key>
+	<array/>
 	<key>Opened Steps</key>
 	<array/>
 	<key>Visible StackLayout Views</key>
