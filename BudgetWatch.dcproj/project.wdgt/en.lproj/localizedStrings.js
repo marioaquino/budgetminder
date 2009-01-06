@@ -5,6 +5,7 @@
  code generator otherwise the changes will be lost.
  */
 var localizedStrings = {
+    "Clear": "Clear",
     "Spending": "Spend-down guage",
     "Until": "Until",
     "Update": "Add Expense"

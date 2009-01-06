@@ -45,51 +45,6 @@ function initMonitors()
     monitorRunning = true;
 }
 
-
-
-//
-// Function: makeMaxTracker(callback, min, valuesToTrack)
-// Creates a function that tracks the maximum value seen recently to
-// allow gague values to be automatically scaled
-//
-// callback: Your function that will be called with (value, max) parameters
-// min: Clamp values less than this to min (default 1.0)
-// valuesToTrack: How much history to keep (default 60 values)
-//
-// Return the tracker function
-//
-function makeMaxTracker(callback, min, valuesToTrack)
-{
-    if (valuesToTrack == null) {
-        valuesToTrack = 60;
-    }
-
-    if (min == null) {
-        min = 1.0;
-    }
-
-    var trackValues = new Array();
-
-    var tracker = function (value)
-    {
-        trackValues.push(value);
-        if (trackValues.length > valuesToTrack) {
-            trackValues.shift();
-        }
-
-        var max = min;
-        for (var i = 0; i < trackValues.length; i++) {
-            if (trackValues[i] > max) {
-                max = trackValues[i];
-            }
-        }
-
-        callback(value, max);
-    };
-
-    return tracker;
-}
-
 //
 // Function: setElementText(elementName, elementValue)
 // Set the text contents of an HTML div
@@ -264,6 +219,7 @@ function showFront(event)
 function updateConfigSettings() {
 	var budget = 'budget=' + getTextValue("textfield-monthly-budget");
 	var cycleDate = 'cycleDate=' + getTextValue("textfield-cycle-date");
+    //Wrap the budget param in single quotes because it may contain a $ sign
     budgetMonitor.callWithParam("update '" + budget + "' " + cycleDate);
 }
 
@@ -273,4 +229,24 @@ if (window.widget)
     widget.onhide = hide;
     widget.onshow = show;
     widget.onsync = sync;
+}
+
+// Callback from resent enablement checkbox
+function enableClearHandler(event)
+{    
+    enableClearButton(event.toElement.checked);
+}
+
+function enableClearButton(enabled) {
+    var button = document.getElementById("button-clear");
+    button.object.setEnabled(event.toElement.checked);
+}
+
+
+function clearRecordsHandler(event)
+{
+    budgetMonitor.callWithParam('clear');
+    var checkbox = document.getElementById("checkbox-enable-clear");
+    checkbox.children[0].checked = false;
+    enableClearButton(false);
 }

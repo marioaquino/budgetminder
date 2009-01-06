@@ -111,10 +111,10 @@ body {
     color: rgb(255, 255, 255);
     font-size: 8pt;
     left: 39px;
-    top: 35px;
+    top: 169px;
     right: 134px;
     width: auto;
-    bottom: 267px;
+    bottom: 133px;
     height: auto;
 }
 
@@ -127,10 +127,10 @@ body {
     color: rgb(255, 255, 255);
     font-size: 8pt;
     left: 39px;
-    top: 76px;
+    top: 210px;
     right: 179px;
     width: auto;
-    bottom: 228px;
+    bottom: 94px;
     height: auto;
 }
 
@@ -141,7 +141,7 @@ body {
     font-size: 10pt;
     width: 118px;
     left: 39px;
-    top: 48px;
+    top: 182px;
 }
 
 #passwordField {
@@ -151,7 +151,7 @@ body {
     font-size: 10pt;
     width: 117px;
     left: 39px;
-    top: 87px;
+    top: 221px;
 }
 
 #text2 {
@@ -163,9 +163,9 @@ body {
     color: rgb(255, 255, 255);
     font-size: 8pt;
     left: 39px;
-    top: 120px;
+    top: 31px;
     width: auto;
-    bottom: 182px;
+    bottom: 271px;
     height: auto;
 }
 
@@ -304,10 +304,10 @@ body {
     font-size: 8pt;
     color: rgb(255, 255, 255);
     left: 39px;
-    top: 166px;
+    top: 77px;
     right: 146px;
     width: auto;
-    bottom: 136px;
+    bottom: 225px;
     height: auto;
 }
 
@@ -318,7 +318,7 @@ body {
     font-size: 10pt;
     width: 72px;
     left: 39px;
-    top: 133px;
+    top: 44px;
 }
 
 #textfield-cycle-date {
@@ -326,9 +326,9 @@ body {
     color: black;
     font-family: HelveticaNeue;
     font-size: 10pt;
-    left: 39px;
     width: 76px;
-    top: 178px;
+    left: 39px;
+    top: 89px;
 }
 
 #textfield-expense {
@@ -342,17 +342,21 @@ body {
     left: 71px;
 }
 
-#button-reset {
+#text8 {
     position: absolute;
-    right: auto;
-    bottom: auto;
-    margin-top: 0px;
-    opacity: 1;
-    top: 211px;
-    left: 145px;
+    text-align: left;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    top: 2px;
+    left: 18px;
+    right: -28px;
+    width: auto;
+    bottom: 0px;
+    height: auto;
 }
 
-#checkboxbutton {
+#checkbox-enable-clear {
     width: 80px;
     font-family: HelveticaNeue;
     font-size: 10pt;
@@ -362,19 +366,15 @@ body {
     bottom: auto;
     margin-top: 0px;
     left: 39px;
-    top: 216px;
+    top: 133px;
 }
 
-#text8 {
+#button-clear {
     position: absolute;
-    text-align: left;
-    vertical-align: middle;
-    color: rgb(255, 255, 255);
-    font-size: 11px;
-    top: 2px;
-    left: 18px;
-    right: -13px;
-    width: auto;
-    bottom: 0px;
-    height: auto;
+    right: auto;
+    bottom: auto;
+    margin-top: 0px;
+    opacity: 1;
+    top: 128px;
+    left: 162px;
 }

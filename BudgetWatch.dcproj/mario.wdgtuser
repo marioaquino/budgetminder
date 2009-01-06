@@ -3,7 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Breakpoints</key>
-	<dict/>
+	<dict>
+		<key>main.js:250</key>
+		<string>-clearRecordsHandler</string>
+	</dict>
 	<key>ContentSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -27,25 +30,25 @@
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>1093c8746c23ae41</string>
+		<string>164c24021a26ae41</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
-		<string>/private/var/folders/60/60ba6QDeGi82vEVEFQsVck+++TI/-Tmp-/Dashcode/.BudgetWatch.dcprojPmetYz/BudgetWatch.dcproj/project.wdgt/</string>
+		<string>/private/var/folders/60/60ba6QDeGi82vEVEFQsVck+++TI/-Tmp-/Dashcode/.BudgetWatch.dcprojL3jH0C/BudgetWatch.dcproj/project.wdgt/</string>
 		<key>percent-offset-x</key>
 		<integer>0</integer>
 		<key>percent-offset-y</key>
 		<integer>0</integer>
 		<key>percent-type</key>
-		<integer>3</integer>
+		<integer>2</integer>
 		<key>percent-x</key>
-		<real>0.30138888955116272</real>
+		<real>0.26111111044883728</real>
 		<key>percent-y</key>
-		<real>0.11555555462837219</real>
+		<real>0.12777778506278992</real>
 		<key>pos-x</key>
-		<integer>738</integer>
+		<integer>796</integer>
 		<key>pos-y</key>
-		<integer>480</integer>
+		<integer>115</integer>
 		<key>rosetta</key>
 		<false/>
 	</dict>
@@ -114,7 +117,13 @@
 		</array>
 	</array>
 	<key>Objects view last selections</key>
-	<array/>
+	<array>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>11</integer>
+		</array>
+	</array>
 	<key>Opened Steps</key>
 	<array/>
 	<key>Visible StackLayout Views</key>

@@ -5,7 +5,7 @@
  code generator otherwise the changes will be lost.
  */
 var dashcodePartSpecs = {
-    "button-reset": { "creationFunction": "CreateGlassButton", "text": "Reset" },
+    "button-clear": { "creationFunction": "CreateGlassButton", "disabled": true, "onclick": "clearRecordsHandler", "text": "Clear" },
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Done" },
     "gauge1": { "continuous": true, "creationFunction": "CreateGauge", "criticalValue": 90, "imagePointer": "Images/gauge_needle.png", "minValue": 99, "pivotOffsetX": 28, "pivotOffsetY": 28, "pointerReach": 85, "startAngle": 45, "stopAngle": 315, "warningValue": 50 },
     "glassbutton": { "creationFunction": "CreateGlassButton", "onclick": "updateGauge", "text": "Update" },

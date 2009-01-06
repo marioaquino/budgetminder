@@ -15,7 +15,7 @@ elsif 'update' == action
   minder.cycle_end_date = args['cycleDate']
   minder.budget = args['budget']
   minder.save
-elsif 'reset' == action
+elsif 'clear' == action
   minder.clear
 end
 
