@@ -159,6 +159,9 @@ CommandMonitor.prototype.finishedHandler = function (command)
     this.stopWatchdogTimer();
     this.processLines(command.outputString);
     delete this.systemCommand;
+	if (this.finishedCallback) { 
+		this.finishedCallback(); 
+	}
     this.startAfterInterval();
 }
 
@@ -179,5 +182,9 @@ BudgetMonitor.prototype.processLine = function (line) {
 BudgetMonitor.prototype.callWithParam = function(param) {
 	this.stop();
 	this.commandLine = this.originalCommand + " " + param;
+	this.finishedCallback = function() {
+		this.commandLine = this.originalCommand;
+		delete this.finishedCallback;
+	}
 	this.start();
 }
