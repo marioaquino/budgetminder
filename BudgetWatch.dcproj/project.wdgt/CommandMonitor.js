@@ -166,7 +166,7 @@ CommandMonitor.prototype.finishedHandler = function (command)
 }
 
 function BudgetMonitor(callback) {
-	this.commandLine = "/usr/bin/ruby foo.rb";
+	this.commandLine = "/usr/bin/ruby -I lib foo.rb";
 	this.originalCommand = this.commandLine;
 	this.ioCallback = callback;
 }
