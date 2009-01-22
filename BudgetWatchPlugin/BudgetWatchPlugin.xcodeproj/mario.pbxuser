@@ -1,0 +1,85 @@
+// !$*UTF8*$!
+{
+	0259C573FE90428111CA0C5A /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = 8D1AC9600486D14A00FE50C9 /* BudgetWatchPlugin */;
+		addToTargets = (
+			8D1AC9600486D14A00FE50C9 /* BudgetWatchPlugin */,
+		);
+		codeSenseManager = AC97FE870F28951300CBE243 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					898,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 254317840;
+			PBXWorkspaceStateSaveDate = 254317840;
+		};
+		perUserProjectItems = {
+			AC97048B0F28983900CBE243 /* PBXTextBookmark */ = AC97048B0F28983900CBE243 /* PBXTextBookmark */;
+			AC97048C0F28983900CBE243 /* PBXTextBookmark */ = AC97048C0F28983900CBE243 /* PBXTextBookmark */;
+		};
+		sourceControlManager = AC97FE860F28951300CBE243 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1AC9600486D14A00FE50C9 /* BudgetWatchPlugin */ = {
+		activeExec = 0;
+	};
+	AC9701820F28960D00CBE243 /* GDataDefines.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1076, 2156}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1059}";
+		};
+	};
+	AC97048B0F28983900CBE243 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AC9701820F28960D00CBE243 /* GDataDefines.h */;
+		name = "GDataDefines.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1059;
+		vrLoc = 0;
+	};
+	AC97048C0F28983900CBE243 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AC9701820F28960D00CBE243 /* GDataDefines.h */;
+		name = "GDataDefines.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1059;
+		vrLoc = 0;
+	};
+	AC97FE860F28951300CBE243 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	AC97FE870F28951300CBE243 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
