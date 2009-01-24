@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "BudgetWatchWorksheet.h"
 
-
-@interface BudgetWatchPluginView : NSView <WebPlugInViewFactory>
+@interface BudgetWatchPluginView : NSView <WebPlugInViewFactory, BudgetWatchSpreadsheetDelegate>
 {
+	BudgetWatchWorksheet* workSheet;
 }
 
 @end

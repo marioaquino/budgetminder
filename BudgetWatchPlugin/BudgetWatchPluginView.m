@@ -7,7 +7,6 @@
 //
 
 #import "BudgetWatchPluginView.h"
-//Dave was here
 
 @interface BudgetWatchPluginView (Internal)
 - (id)_initWithArguments:(NSDictionary *)arguments;
@@ -23,6 +22,16 @@
     return [[[self alloc] _initWithArguments:newArguments] autorelease];
 }
 
+- (void) finishedLoading
+{
+	// update ui
+}
+
+- (void) onError: (NSError*) error
+{
+	// message to user
+}
+
 // WebPlugIn informal protocol
 
 - (void)webPlugInInitialize
@@ -30,6 +39,8 @@
     // This method will be only called once per instance of the plug-in object, and will be called
     // before any other methods in the WebPlugIn protocol.
     // You are not required to implement this method.  It may safely be removed.
+	
+	workSheet = [BudgetWatchWorksheet newWithUser: @"" andPassword: @"" usingDelegate: self];
 }
 
 - (void)webPlugInStart
