@@ -22,12 +22,12 @@
     return [[[self alloc] _initWithArguments:newArguments] autorelease];
 }
 
-- (void) finishedLoading
+- (void) worksheetFinishedLoading
 {
 	// update ui
 }
 
-- (void) onError: (NSError*) error
+- (void) worksheetError: (NSError*) error
 {
 	// message to user
 }
@@ -40,7 +40,10 @@
     // before any other methods in the WebPlugIn protocol.
     // You are not required to implement this method.  It may safely be removed.
 	
-	workSheet = [BudgetMinderWorksheet newWithUser: @"lw.mario.test.account@gmail.com" andPassword: @"lwchattesting" usingDelegate: self];
+	workSheet = [BudgetMinderWorksheet newUsingDelegate: self];
+	workSheet.user = @"lw.mario.test.account@gmail.com";
+	workSheet.password = @"lwchattesting";
+	[workSheet login];
 }
 
 - (void)webPlugInStart

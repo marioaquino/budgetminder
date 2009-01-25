@@ -6,31 +6,30 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
+#import "BudgetMinderModel.h"
 #import "GDataSpreadsheet.h"
 
 @protocol BudgetMinderWorksheetDelegate
 
-- (void) finishedLoading;
-- (void) onError: (NSError*) error;
+- (void) worksheetFinishedLoading;
+- (void) worksheetError: (NSError*) error;
 
 @end
 
-@interface BudgetMinderWorksheet : NSObject {
+@interface BudgetMinderWorksheet : NSObject<BudgetMinderModel> {
 	id delegate;
+	NSString* user;
+	NSString* password;
+	
 	GDataServiceGoogleSpreadsheet* service;
 	GDataFeedBase* entryFeed;
 }
 
-+ (BudgetMinderWorksheet*) newWithUser: (NSString*) user andPassword: (NSString*) password usingDelegate: (id) theDelegate;
+@property (nonatomic, retain) NSString* user;
+@property (nonatomic, retain) NSString* password;
 
-- (void) addExpense: (float) expense;
-- (void) clear;
-- (void) save;
++ (BudgetMinderWorksheet*) newUsingDelegate: (id) theDelegate;
 
-@property (nonatomic, readonly) double currentValue;
-@property (nonatomic, readonly) double remaining;
-@property (nonatomic, readonly) double percentUsed;
-@property (nonatomic) double budget;
-@property (nonatomic) double cycleEndDate;
+- (void) login;
 
 @end

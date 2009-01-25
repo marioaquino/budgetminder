@@ -7,10 +7,9 @@
 //
 
 #import "BudgetMinderWorksheet.h"
-
 @interface BudgetMinderWorksheet (private)
 
-- (id) initWithUser: (NSString*) user andPassword: (NSString*) password  usingDelegate: (id) theDelegate;
+- (id) initUsingDelegate: (id) theDelegate;
 - (void) spreadsheetsTicket: (GDataServiceTicket*) ticket finishedWithFeed: (GDataFeedSpreadsheet*) object;
 - (void) spreadsheetsTicket: (GDataServiceTicket*) ticket failedWithError: (NSError*) error;
 - (void) worksheetsTicket: (GDataServiceTicket*) ticket finishedWithFeed: (GDataFeedWorksheet*) object;
@@ -22,25 +21,32 @@
 
 @implementation BudgetMinderWorksheet
 
-+ (BudgetMinderWorksheet*) newWithUser: (NSString*) user andPassword: (NSString*) password  usingDelegate: (id) theDelegate
+@synthesize user;
+@synthesize password;
+
++ (BudgetMinderWorksheet*) newUsingDelegate: (id) theDelegate
 {
-	return [[BudgetMinderWorksheet alloc] initWithUser: user andPassword: password usingDelegate: theDelegate];
+	return [[BudgetMinderWorksheet alloc] initUsingDelegate: theDelegate];
 }
 
-- (id) initWithUser: (NSString*) user andPassword: (NSString*) password  usingDelegate: (id) theDelegate
+- (id) initUsingDelegate: (id) theDelegate
 {
 	[super init];
 	delegate = theDelegate;
+	return self;
+}
+
+- (void) login
+{
 	service = [[GDataServiceGoogleSpreadsheet alloc] init];
 	[service setUserAgent: @"Melvin-BudgetMinder-1.0"];
 	[service setUserCredentialsWithUsername: user password: password];
 	
 	NSURL* feedURL = [NSURL URLWithString: kGDataGoogleSpreadsheetsPrivateFullFeed];
 	[service fetchSpreadsheetFeedWithURL: feedURL
-						delegate: self
-						didFinishSelector: @selector(spreadsheetsTicket:finishedWithFeed:)
-						didFailSelector: @selector(spreadsheetsTicket:failedWithError:)];
-	return self;
+								delegate: self
+					   didFinishSelector: @selector(spreadsheetsTicket:finishedWithFeed:)
+						 didFailSelector: @selector(spreadsheetsTicket:failedWithError:)];
 }
 
 - (void) spreadsheetsTicket: (GDataServiceTicket*) ticket finishedWithFeed: (GDataFeedSpreadsheet*) object
@@ -60,15 +66,17 @@
 	}
 	else
 	{
-		[delegate onError: nil];
+		[delegate worksheetError: nil];
 	}
 }
 
-- (void) spreadsheetsTicket: (GDataServiceTicket*) ticket failedWithError: (NSError*) error {
-	[delegate onError: error];	
+- (void) spreadsheetsTicket: (GDataServiceTicket*) ticket failedWithError: (NSError*) error
+{
+	[delegate worksheetError: error];	
 }
 
-- (void) worksheetsTicket: (GDataServiceTicket *)ticket finishedWithEntries:(GDataFeedWorksheet*) object {
+- (void) worksheetsTicket: (GDataServiceTicket *)ticket finishedWithEntries:(GDataFeedWorksheet*) object
+{
 	NSArray* worksheets = [object entries];
 	if (worksheets != nil && worksheets.count > 0)
 	{
@@ -85,24 +93,24 @@
 	}
 	else
 	{
-		[delegate onError: nil];
+		[delegate worksheetError: nil];
 	}
 } 
 
 - (void) worksheetsTicket: (GDataServiceTicket *)ticket failedWithError: (NSError*) error
 {
-	[delegate onError: error];
+	[delegate worksheetError: error];
 }
 
 - (void) entriesTicket: (GDataServiceTicket*) ticket finishedWithEntries: (GDataFeedBase*) object
 {	
 	entryFeed = [object retain];
-	[delegate finishedLoading];
+	[delegate worksheetFinishedLoading];
 } 
 
 - (void) entriesTicket: (GDataServiceTicket*) ticket failedWithError: (NSError*) error
 {
-	[delegate onError: error];	
+	[delegate worksheetError: error];	
 }
 
 - (void) addExpense: (float) expense

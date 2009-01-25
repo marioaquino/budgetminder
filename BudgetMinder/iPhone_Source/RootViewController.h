@@ -12,7 +12,6 @@
 @class FlipsideViewController;
 
 @interface RootViewController : UIViewController {
-
     UIButton *infoButton;
     MainViewController *mainViewController;
     FlipsideViewController *flipsideViewController;

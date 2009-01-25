@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BudgetMinderWorksheet.h"
 
-@interface MainViewController : UIViewController {
-    
+@interface MainViewController : UIViewController<BudgetMinderWorksheetDelegate> {
+    BudgetMinderWorksheet* model;
 }
+
+@property (nonatomic, retain) IBOutlet BudgetMinderWorksheet* model;
 
 @end

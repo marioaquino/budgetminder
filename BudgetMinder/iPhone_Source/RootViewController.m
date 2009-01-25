@@ -10,7 +10,6 @@
 #import "MainViewController.h"
 #import "FlipsideViewController.h"
 
-
 @implementation RootViewController
 
 @synthesize infoButton;
@@ -18,24 +17,24 @@
 @synthesize mainViewController;
 @synthesize flipsideViewController;
 
-
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
+
     MainViewController *viewController = [[MainViewController alloc] initWithNibName:@"MainView" bundle:nil];
     self.mainViewController = viewController;
     [viewController release];
     
+	[mainViewController viewWillAppear:NO];
     [self.view insertSubview:mainViewController.view belowSubview:infoButton];
+	[mainViewController viewDidAppear:NO];
 }
-
 
 - (void)loadFlipsideViewController {
     
     FlipsideViewController *viewController = [[FlipsideViewController alloc] initWithNibName:@"FlipsideView" bundle:nil];
     self.flipsideViewController = viewController;
     [viewController release];
-    
+	
     // Set up the navigation bar
     UINavigationBar *aNavigationBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 44.0)];
     aNavigationBar.barStyle = UIBarStyleBlackOpaque;

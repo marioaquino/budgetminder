@@ -144,6 +144,9 @@
 		55814C3C0F2CC9F800CF98B0 /* GDataHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 55814C300F2CC9F800CF98B0 /* GDataHTTPFetcherLogging.m */; };
 		55814C3D0F2CC9F800CF98B0 /* GDataMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 55814C320F2CC9F800CF98B0 /* GDataMIMEDocument.m */; };
 		55814C3E0F2CC9F800CF98B0 /* GDataProgressMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 55814C340F2CC9F800CF98B0 /* GDataProgressMonitorInputStream.m */; };
+		55814C710F2CD0C400CF98B0 /* BudgetMinderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55814C700F2CD0C400CF98B0 /* BudgetMinderModel.m */; };
+		55814C720F2CD0C400CF98B0 /* BudgetMinderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55814C700F2CD0C400CF98B0 /* BudgetMinderModel.m */; };
+		55814DFB0F2D171300CF98B0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 55814DFA0F2D171300CF98B0 /* Settings.bundle */; };
 		55CA8B970F2C2F2A007A1276 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CA8B8B0F2C2F2A007A1276 /* MainViewController.m */; };
 		55CA8B980F2C2F2A007A1276 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CA8B8E0F2C2F2A007A1276 /* RootViewController.m */; };
 		55CA8B990F2C2F2A007A1276 /* FlipsideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CA8B900F2C2F2A007A1276 /* FlipsideView.m */; };
@@ -312,6 +315,9 @@
 		55814C320F2CC9F800CF98B0 /* GDataMIMEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataMIMEDocument.m; sourceTree = "<group>"; };
 		55814C330F2CC9F800CF98B0 /* GDataProgressMonitorInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataProgressMonitorInputStream.h; sourceTree = "<group>"; };
 		55814C340F2CC9F800CF98B0 /* GDataProgressMonitorInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataProgressMonitorInputStream.m; sourceTree = "<group>"; };
+		55814C6F0F2CD0C400CF98B0 /* BudgetMinderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetMinderModel.h; sourceTree = "<group>"; };
+		55814C700F2CD0C400CF98B0 /* BudgetMinderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetMinderModel.m; sourceTree = "<group>"; };
+		55814DFA0F2D171300CF98B0 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = iPhone_Resources/Settings.bundle; sourceTree = "<group>"; };
 		55CA8B8B0F2C2F2A007A1276 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = iPhone_Source/MainViewController.m; sourceTree = "<group>"; };
 		55CA8B8C0F2C2F2A007A1276 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = iPhone_Source/RootViewController.h; sourceTree = "<group>"; };
 		55CA8B8D0F2C2F2A007A1276 /* FlipsideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipsideView.h; path = iPhone_Source/FlipsideView.h; sourceTree = "<group>"; };
@@ -387,10 +393,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				55814C6F0F2CD0C400CF98B0 /* BudgetMinderModel.h */,
+				55814C700F2CD0C400CF98B0 /* BudgetMinderModel.m */,
 				55CA8D310F2C331D007A1276 /* BudgetMinderWorksheet.h */,
 				55CA8D320F2C331D007A1276 /* BudgetMinderWorksheet.m */,
 				55CA8BEF0F2C319C007A1276 /* GData */,
-				55CA8D690F2C35C7007A1276 /* Plugin_Source */,
+				55CA8D690F2C35C7007A1276 /* Plugin Source */,
 				55CA8BEB0F2C3143007A1276 /* Plugin Resources */,
 				29B97323FDCFA39411CA2CEA /* Plugin Frameworks */,
 				55CA8B890F2C2EBC007A1276 /* iPhone Source */,
@@ -405,9 +413,10 @@
 			isa = PBXGroup;
 			children = (
 				55CA8BAF0F2C2FF4007A1276 /* iPhone-Info.plist */,
-				55CA8BB20F2C2FF4007A1276 /* MainView.xib */,
 				55CA8BB10F2C2FF4007A1276 /* MainWindow.xib */,
+				55CA8BB20F2C2FF4007A1276 /* MainView.xib */,
 				55CA8BB00F2C2FF4007A1276 /* FlipsideView.xib */,
+				55814DFA0F2D171300CF98B0 /* Settings.bundle */,
 			);
 			name = "iPhone Resources";
 			sourceTree = "<group>";
@@ -664,14 +673,14 @@
 			name = GData;
 			sourceTree = "<group>";
 		};
-		55CA8D690F2C35C7007A1276 /* Plugin_Source */ = {
+		55CA8D690F2C35C7007A1276 /* Plugin Source */ = {
 			isa = PBXGroup;
 			children = (
 				55CA8D700F2C3610007A1276 /* Plugin_Prefix.pch */,
 				55CA8D710F2C3610007A1276 /* BudgetWatchPluginView.h */,
 				55CA8D6F0F2C3610007A1276 /* BudgetWatchPluginView.m */,
 			);
-			name = Plugin_Source;
+			name = "Plugin Source";
 			sourceTree = "<group>";
 		};
 		55CA8D6B0F2C3604007A1276 /* English.lproj */ = {
@@ -764,6 +773,7 @@
 				55CA8BB40F2C2FF4007A1276 /* FlipsideView.xib in Resources */,
 				55CA8BB50F2C2FF4007A1276 /* MainWindow.xib in Resources */,
 				55CA8BB60F2C2FF4007A1276 /* MainView.xib in Resources */,
+				55814DFB0F2D171300CF98B0 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,6 +869,7 @@
 				55814C3C0F2CC9F800CF98B0 /* GDataHTTPFetcherLogging.m in Sources */,
 				55814C3D0F2CC9F800CF98B0 /* GDataMIMEDocument.m in Sources */,
 				55814C3E0F2CC9F800CF98B0 /* GDataProgressMonitorInputStream.m in Sources */,
+				55814C710F2CD0C400CF98B0 /* BudgetMinderModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,6 +948,7 @@
 				55814C370F2CC9F800CF98B0 /* GDataHTTPFetcherLogging.m in Sources */,
 				55814C380F2CC9F800CF98B0 /* GDataMIMEDocument.m in Sources */,
 				55814C390F2CC9F800CF98B0 /* GDataProgressMonitorInputStream.m in Sources */,
+				55814C720F2CD0C400CF98B0 /* BudgetMinderModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

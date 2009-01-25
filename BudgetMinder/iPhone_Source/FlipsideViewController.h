@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FlipsideViewController : UIViewController {
+@class BudgetMinderWorksheet;
 
+@interface FlipsideViewController : UIViewController {
+	UITextField* user;
+	UITextField* password;
 }
+
+// No bindings on iPhone!!!
+@property (nonatomic, retain) IBOutlet UITextField* user;
+- (IBAction) userChanged: (id) sender;
+@property (nonatomic, retain) IBOutlet UITextField* password;
+- (IBAction) passwordChanged: (id) sender;
 
 @end

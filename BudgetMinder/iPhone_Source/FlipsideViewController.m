@@ -7,10 +7,12 @@
 //
 
 #import "FlipsideViewController.h"
-
+#import "BudgetMinderWorksheet.h"
 
 @implementation FlipsideViewController
 
+@synthesize user;
+@synthesize password;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,6 +35,27 @@
 - (void)dealloc {
     [super dealloc];
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+	NSUserDefaults* setttings = [NSUserDefaults standardUserDefaults];
+	self.user.text = [setttings objectForKey: @"user"];
+	self.password.text = [setttings objectForKey: @"password"];
+}
+
+- (IBAction) userChanged: (id) sender
+{
+	NSUserDefaults* setttings = [NSUserDefaults standardUserDefaults];
+	[setttings setObject: [sender text] forKey: @"user"];
+}
+
+
+- (IBAction) passwordChanged: (id) sender
+{
+	NSUserDefaults* setttings = [NSUserDefaults standardUserDefaults];
+	[setttings setObject: [sender text] forKey: @"password"];
+}
+
 
 
 @end
