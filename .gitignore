@@ -1,2 +1,5 @@
 build
 config
+*.pbxuser
+*.perspectivev3
+*.tm_build_errors

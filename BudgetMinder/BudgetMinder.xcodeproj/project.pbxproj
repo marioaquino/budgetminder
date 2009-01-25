@@ -167,7 +167,18 @@
 		55CA910E0F2CC54B007A1276 /* GDataUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CA91030F2CC54B007A1276 /* GDataUtilities.m */; };
 		55CA91110F2CC54B007A1276 /* GDataFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CA90A20F2CC54B007A1276 /* GDataFramework.m */; };
 		55CA91150F2CC54B007A1276 /* GDataUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CA91030F2CC54B007A1276 /* GDataUtilities.m */; };
+		AC2574BC0F2CDD970016DC8F /* BudgetWatchPluginViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2574BB0F2CDD970016DC8F /* BudgetWatchPluginViewTest.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC2574B80F2CDCD90016DC8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5516BF4D0F2C2DA9009D4D2E;
+			remoteInfo = Plugin;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -347,6 +358,10 @@
 		55CA90B10F2CC54B007A1276 /* GDataDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataDefines.h; path = ../GData/GDataDefines.h; sourceTree = SOURCE_ROOT; };
 		55CA91030F2CC54B007A1276 /* GDataUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataUtilities.m; path = ../GData/GDataUtilities.m; sourceTree = SOURCE_ROOT; };
 		55CA91040F2CC54B007A1276 /* GDataUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataUtilities.h; path = ../GData/GDataUtilities.h; sourceTree = SOURCE_ROOT; };
+		AC2574B30F2CDCBA0016DC8F /* PluginTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PluginTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2574B40F2CDCBA0016DC8F /* PluginTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PluginTests-Info.plist"; sourceTree = "<group>"; };
+		AC2574BA0F2CDD970016DC8F /* BudgetWatchPluginViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BudgetWatchPluginViewTest.h; path = Plugin_Tests/BudgetWatchPluginViewTest.h; sourceTree = "<group>"; };
+		AC2574BB0F2CDD970016DC8F /* BudgetWatchPluginViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BudgetWatchPluginViewTest.m; path = Plugin_Tests/BudgetWatchPluginViewTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +387,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC2574B00F2CDCBA0016DC8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -380,6 +402,7 @@
 			children = (
 				1D6058910D05DD3D006BFB54 /* BudgetMinder.app */,
 				5516BF4E0F2C2DA9009D4D2E /* BudgetMinder.webplugin */,
+				AC2574B30F2CDCBA0016DC8F /* PluginTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -390,13 +413,15 @@
 				55CA8D310F2C331D007A1276 /* BudgetMinderWorksheet.h */,
 				55CA8D320F2C331D007A1276 /* BudgetMinderWorksheet.m */,
 				55CA8BEF0F2C319C007A1276 /* GData */,
-				55CA8D690F2C35C7007A1276 /* Plugin_Source */,
+				55CA8D690F2C35C7007A1276 /* Plugin Source */,
+				AC2574AB0F2CDC3A0016DC8F /* Plugin Tests */,
 				55CA8BEB0F2C3143007A1276 /* Plugin Resources */,
 				29B97323FDCFA39411CA2CEA /* Plugin Frameworks */,
 				55CA8B890F2C2EBC007A1276 /* iPhone Source */,
 				29B97317FDCFA39411CA2CEA /* iPhone Resources */,
 				55CA8F130F2C385B007A1276 /* iPhone Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				AC2574B40F2CDCBA0016DC8F /* PluginTests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -664,14 +689,14 @@
 			name = GData;
 			sourceTree = "<group>";
 		};
-		55CA8D690F2C35C7007A1276 /* Plugin_Source */ = {
+		55CA8D690F2C35C7007A1276 /* Plugin Source */ = {
 			isa = PBXGroup;
 			children = (
 				55CA8D700F2C3610007A1276 /* Plugin_Prefix.pch */,
 				55CA8D710F2C3610007A1276 /* BudgetWatchPluginView.h */,
 				55CA8D6F0F2C3610007A1276 /* BudgetWatchPluginView.m */,
 			);
-			name = Plugin_Source;
+			name = "Plugin Source";
 			sourceTree = "<group>";
 		};
 		55CA8D6B0F2C3604007A1276 /* English.lproj */ = {
@@ -692,6 +717,15 @@
 				288765580DF743DE002DB57D /* CoreGraphics.framework */,
 			);
 			name = "iPhone Frameworks";
+			sourceTree = "<group>";
+		};
+		AC2574AB0F2CDC3A0016DC8F /* Plugin Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AC2574BA0F2CDD970016DC8F /* BudgetWatchPluginViewTest.h */,
+				AC2574BB0F2CDD970016DC8F /* BudgetWatchPluginViewTest.m */,
+			);
+			name = "Plugin Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -731,6 +765,25 @@
 			productReference = 5516BF4E0F2C2DA9009D4D2E /* BudgetMinder.webplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
+		AC2574B20F2CDCBA0016DC8F /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC2574B70F2CDCBA0016DC8F /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				AC2574AE0F2CDCBA0016DC8F /* Resources */,
+				AC2574AF0F2CDCBA0016DC8F /* Sources */,
+				AC2574B00F2CDCBA0016DC8F /* Frameworks */,
+				AC2574B10F2CDCBA0016DC8F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC2574B90F2CDCD90016DC8F /* PBXTargetDependency */,
+			);
+			name = Test;
+			productName = PluginTests;
+			productReference = AC2574B30F2CDCBA0016DC8F /* PluginTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -752,6 +805,7 @@
 			targets = (
 				1D6058900D05DD3D006BFB54 /* iPhone */,
 				5516BF4D0F2C2DA9009D4D2E /* Plugin */,
+				AC2574B20F2CDCBA0016DC8F /* Test */,
 			);
 		};
 /* End PBXProject section */
@@ -775,7 +829,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC2574AE0F2CDCBA0016DC8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC2574B10F2CDCBA0016DC8F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -940,7 +1017,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC2574AF0F2CDCBA0016DC8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC2574BC0F2CDD970016DC8F /* BudgetWatchPluginViewTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC2574B90F2CDCD90016DC8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5516BF4D0F2C2DA9009D4D2E /* Plugin */;
+			targetProxy = AC2574B80F2CDCD90016DC8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		55CA8D6C0F2C3604007A1276 /* InfoPlist.strings */ = {
@@ -1035,6 +1128,61 @@
 			};
 			name = Release;
 		};
+		AC2574B50F2CDCBA0016DC8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "PluginTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PluginTests;
+				SDKROOT = macosx10.5;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AC2574B60F2CDCBA0016DC8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "PluginTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PluginTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1081,6 +1229,15 @@
 			buildConfigurations = (
 				5516BF510F2C2DAB009D4D2E /* Debug */,
 				5516BF520F2C2DAB009D4D2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC2574B70F2CDCBA0016DC8F /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC2574B50F2CDCBA0016DC8F /* Debug */,
+				AC2574B60F2CDCBA0016DC8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
