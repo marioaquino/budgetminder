@@ -7,10 +7,11 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "BudgetWatchPluginView.h"
 
-
-@interface BudgetWatchPluginViewTest : SenTestCase {
-
+@interface BudgetWatchPluginViewTest : SenTestCase
+{
+	BudgetWatchPluginView* view;
 }
 
 @end
