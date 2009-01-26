@@ -11,7 +11,7 @@ if 'expense' == action
   minder.add_expense(ARGV[1]) if ARGV[1]	
 elsif 'update' == action
   args = hash_arg(ARGV[1]).merge(hash_arg(ARGV[2]))
-  puts args.to_yaml
+  # puts args.to_yaml
   minder.cycle_end_date = args['cycleDate']
   minder.budget = args['budget']
   minder.save

@@ -1,4 +1,6 @@
 require "rubygems"
+require "date"
+require "parsedate"
 require "google_spreadsheet"
 
 class BudgetMinder
@@ -54,7 +56,9 @@ class BudgetMinder
   end
   
   def days_until_end_of_cycle
-    (Date.parse(cycle_end_date) - Date.today).to_i
+    # Date.parse introduced in Ruby 1.8.7 and later :(
+    #(Date.parse(cycle_end_date) - Date.today).to_i
+    (Date.new(*(ParseDate.parsedate(cycle_end_date).compact)) - Date.today).to_i
   end
   
   def percent_used
