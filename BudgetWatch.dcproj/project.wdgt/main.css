@@ -95,11 +95,11 @@ body {
     font-weight: bold;
     font-family: 'Helvetica Neue';
     left: 138px;
-    right: 61px;
-    width: auto;
-    height: auto;
-    bottom: 77px;
     top: 225px;
+    right: 32px;
+    width: auto;
+    bottom: 77px;
+    height: auto;
 }
 
 #text {
@@ -255,11 +255,11 @@ body {
     font-weight: bold;
     font-family: 'Helvetica Neue';
     left: 138px;
-    right: 82px;
-    width: auto;
-    height: auto;
-    bottom: 95px;
     top: 206px;
+    right: 32px;
+    width: auto;
+    bottom: 98px;
+    height: auto;
 }
 
 #text-amount-spent {
@@ -272,11 +272,11 @@ body {
     font-weight: bold;
     font-family: 'Helvetica Neue';
     left: 138px;
-    right: 81px;
-    width: auto;
-    height: auto;
-    bottom: 113px;
     top: 188px;
+    right: 32px;
+    width: auto;
+    bottom: 115px;
+    height: auto;
 }
 
 #text7 {

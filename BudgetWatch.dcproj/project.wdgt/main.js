@@ -250,3 +250,11 @@ function clearRecordsHandler(event)
     checkbox.children[0].checked = false;
     enableClearButton(false);
 }
+
+
+function expenseFieldInputHandler(event)
+{
+    if ("Enter" == event.keyIdentifier) {
+        updateGauge(event);
+    }
+}
