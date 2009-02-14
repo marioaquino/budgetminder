@@ -2,4 +2,5 @@ build
 config
 *.pbxuser
 *.perspectivev3
+*.TM_Completions.txt.gz
 *.tm_build_errors

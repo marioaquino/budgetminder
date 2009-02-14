@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* BudgetMinderiPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BudgetMinderiPhoneAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
+		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
+		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
+		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
+		289233A60DB2D0840083E9F9 /* FlipsideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A30DB2D0840083E9F9 /* FlipsideView.m */; };
+		289233A70DB2D0840083E9F9 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A50DB2D0840083E9F9 /* MainView.m */; };
+		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
+		289233AF0DB2D0DB0083E9F9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AB0DB2D0DB0083E9F9 /* RootViewController.m */; };
+		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
+		ACB923B00F47512900951700 /* BudgetMinderWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923AF0F47512900951700 /* BudgetMinderWorksheet.m */; };
+		ACB926740F47518000951700 /* GDataACLRole.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923C50F47517F00951700 /* GDataACLRole.m */; };
+		ACB926750F47518000951700 /* GDataACLScope.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923C70F47517F00951700 /* GDataACLScope.m */; };
+		ACB926760F47518000951700 /* GDataEntryACL.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923C90F47517F00951700 /* GDataEntryACL.m */; };
+		ACB926770F47518000951700 /* GDataFeedACL.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923CB0F47517F00951700 /* GDataFeedACL.m */; };
+		ACB926780F47518000951700 /* GDataEntryBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923CE0F47517F00951700 /* GDataEntryBase.m */; };
+		ACB926790F47518000951700 /* GDataEntryEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923D00F47517F00951700 /* GDataEntryEvent.m */; };
+		ACB9267A0F47518000951700 /* GDataEntryMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923D20F47517F00951700 /* GDataEntryMessage.m */; };
+		ACB9267B0F47518000951700 /* GDataFeedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923D40F47517F00951700 /* GDataFeedBase.m */; };
+		ACB9267C0F47518000951700 /* GDataFeedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923D60F47517F00951700 /* GDataFeedEvent.m */; };
+		ACB9267D0F47518000951700 /* GDataFeedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923D80F47517F00951700 /* GDataFeedMessage.m */; };
+		ACB9267E0F47518000951700 /* GDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923DA0F47517F00951700 /* GDataObject.m */; };
+		ACB9267F0F47518000951700 /* GDataQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923DC0F47517F00951700 /* GDataQuery.m */; };
+		ACB926800F47518000951700 /* GDataServiceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923DE0F47517F00951700 /* GDataServiceBase.m */; };
+		ACB926810F47518000951700 /* GDataServiceGoogle.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB923E00F47517F00951700 /* GDataServiceGoogle.m */; };
+		ACB926C60F47518000951700 /* GDataEntrySpreadsheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9247C0F47517F00951700 /* GDataEntrySpreadsheet.m */; };
+		ACB926C70F47518000951700 /* GDataEntrySpreadsheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9247E0F47517F00951700 /* GDataEntrySpreadsheetCell.m */; };
+		ACB926C80F47518000951700 /* GDataEntrySpreadsheetList.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924800F47517F00951700 /* GDataEntrySpreadsheetList.m */; };
+		ACB926C90F47518000951700 /* GDataEntryWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924820F47517F00951700 /* GDataEntryWorksheet.m */; };
+		ACB926CA0F47518000951700 /* GDataFeedSpreadsheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924840F47517F00951700 /* GDataFeedSpreadsheet.m */; };
+		ACB926CB0F47518000951700 /* GDataFeedSpreadsheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924860F47517F00951700 /* GDataFeedSpreadsheetCell.m */; };
+		ACB926CC0F47518000951700 /* GDataFeedSpreadsheetList.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924880F47517F00951700 /* GDataFeedSpreadsheetList.m */; };
+		ACB926CD0F47518000951700 /* GDataFeedWorksheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9248A0F47517F00951700 /* GDataFeedWorksheet.m */; };
+		ACB926CE0F47518000951700 /* GDataQuerySpreadsheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9248C0F47517F00951700 /* GDataQuerySpreadsheet.m */; };
+		ACB926CF0F47518000951700 /* GDataRowColumnCount.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9248E0F47517F00951700 /* GDataRowColumnCount.m */; };
+		ACB926D00F47518000951700 /* GDataServiceGoogleSpreadsheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924900F47517F00951700 /* GDataServiceGoogleSpreadsheet.m */; };
+		ACB926D10F47518000951700 /* GDataSpreadsheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924930F47517F00951700 /* GDataSpreadsheetCell.m */; };
+		ACB926D20F47518000951700 /* GDataSpreadsheetCustomElement.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924950F47517F00951700 /* GDataSpreadsheetCustomElement.m */; };
+		ACB926F70F47518000951700 /* GDataAtomPubControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924E40F47517F00951700 /* GDataAtomPubControl.m */; };
+		ACB926F80F47518000951700 /* GDataBaseElements.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924E60F47517F00951700 /* GDataBaseElements.m */; };
+		ACB926F90F47518000951700 /* GDataBatchID.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924E80F47517F00951700 /* GDataBatchID.m */; };
+		ACB926FA0F47518000951700 /* GDataBatchInterrupted.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924EA0F47517F00951700 /* GDataBatchInterrupted.m */; };
+		ACB926FB0F47518000951700 /* GDataBatchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924EC0F47517F00951700 /* GDataBatchOperation.m */; };
+		ACB926FC0F47518000951700 /* GDataBatchStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924EE0F47517F00951700 /* GDataBatchStatus.m */; };
+		ACB926FD0F47518000951700 /* GDataCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924F00F47517F00951700 /* GDataCategory.m */; };
+		ACB926FE0F47518000951700 /* GDataComment.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924F20F47517F00951700 /* GDataComment.m */; };
+		ACB926FF0F47518000951700 /* GDataDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924F40F47517F00951700 /* GDataDateTime.m */; };
+		ACB927000F47518000951700 /* GDataDeleted.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924F60F47517F00951700 /* GDataDeleted.m */; };
+		ACB927010F47518000951700 /* GDataEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924F90F47517F00951700 /* GDataEmail.m */; };
+		ACB927020F47518000951700 /* GDataEntryContent.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924FB0F47517F00951700 /* GDataEntryContent.m */; };
+		ACB927030F47518000951700 /* GDataEntryLink.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924FD0F47517F00951700 /* GDataEntryLink.m */; };
+		ACB927040F47518000951700 /* GDataExtendedProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB924FF0F47517F00951700 /* GDataExtendedProperty.m */; };
+		ACB927050F47518000951700 /* GDataFeedLink.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925010F47517F00951700 /* GDataFeedLink.m */; };
+		ACB927060F47518000951700 /* GDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925030F47517F00951700 /* GDataGenerator.m */; };
+		ACB927070F47518000951700 /* GDataGeoPt.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925050F47517F00951700 /* GDataGeoPt.m */; };
+		ACB927080F47518000951700 /* GDataIM.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925070F47517F00951700 /* GDataIM.m */; };
+		ACB927090F47518000951700 /* GDataLink.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925090F47517F00951700 /* GDataLink.m */; };
+		ACB9270A0F47518000951700 /* GDataMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9250B0F47517F00951700 /* GDataMoney.m */; };
+		ACB9270B0F47518000951700 /* GDataOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9250D0F47517F00951700 /* GDataOrganization.m */; };
+		ACB9270C0F47518000951700 /* GDataOriginalEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9250F0F47517F00951700 /* GDataOriginalEvent.m */; };
+		ACB9270D0F47518000951700 /* GDataPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925110F47517F00951700 /* GDataPerson.m */; };
+		ACB9270E0F47518000951700 /* GDataPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925130F47517F00951700 /* GDataPhoneNumber.m */; };
+		ACB9270F0F47518000951700 /* GDataPostalAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925150F47517F00951700 /* GDataPostalAddress.m */; };
+		ACB927100F47518000951700 /* GDataRating.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925170F47517F00951700 /* GDataRating.m */; };
+		ACB927110F47518000951700 /* GDataRecurrence.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925190F47517F00951700 /* GDataRecurrence.m */; };
+		ACB927120F47518000951700 /* GDataRecurrenceException.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9251B0F47517F00951700 /* GDataRecurrenceException.m */; };
+		ACB927130F47518000951700 /* GDataReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9251D0F47517F00951700 /* GDataReminder.m */; };
+		ACB927140F47518000951700 /* GDataTextConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9251F0F47517F00951700 /* GDataTextConstruct.m */; };
+		ACB927150F47518000951700 /* GDataValueConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925210F47517F00951700 /* GDataValueConstruct.m */; };
+		ACB927160F47518000951700 /* GDataWhen.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925230F47517F00951700 /* GDataWhen.m */; };
+		ACB927170F47518000951700 /* GDataWhere.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925250F47517F00951700 /* GDataWhere.m */; };
+		ACB927180F47518000951700 /* GDataWho.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB925270F47517F00951700 /* GDataWho.m */; };
+		ACB927850F47518000951700 /* GDataFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB926080F47518000951700 /* GDataFramework.m */; };
+		ACB927860F47518000951700 /* GDataUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9260A0F47518000951700 /* GDataUtilities.m */; };
+		ACB927920F47518000951700 /* GDataGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB926250F47518000951700 /* GDataGatherInputStream.m */; };
+		ACB927930F47518000951700 /* GDataHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB926270F47518000951700 /* GDataHTTPFetcher.m */; };
+		ACB927940F47518000951700 /* GDataHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB926290F47518000951700 /* GDataHTTPFetcherLogging.m */; };
+		ACB927950F47518000951700 /* GDataMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9262B0F47518000951700 /* GDataMIMEDocument.m */; };
+		ACB927960F47518000951700 /* GDataProgressMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9262D0F47518000951700 /* GDataProgressMonitorInputStream.m */; };
+		ACB927CB0F47518000951700 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB926730F47518000951700 /* GDataXMLNode.m */; };
+		ACB92DB30F47599500951700 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB92DB20F47599500951700 /* libxml2.2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* BudgetMinderiPhoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetMinderiPhoneAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* BudgetMinderiPhoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetMinderiPhoneAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* BudgetMinderiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetMinderiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FlipsideView.xib; path = Resources/FlipsideView.xib; sourceTree = "<group>"; };
+		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainView.xib; path = Resources/MainView.xib; sourceTree = "<group>"; };
+		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
+		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		289233A20DB2D0840083E9F9 /* FlipsideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipsideView.h; path = Classes/FlipsideView.h; sourceTree = "<group>"; };
+		289233A30DB2D0840083E9F9 /* FlipsideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideView.m; path = Classes/FlipsideView.m; sourceTree = "<group>"; };
+		289233A40DB2D0840083E9F9 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainView.h; path = Classes/MainView.h; sourceTree = "<group>"; };
+		289233A50DB2D0840083E9F9 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainView.m; path = Classes/MainView.m; sourceTree = "<group>"; };
+		289233A80DB2D0DB0083E9F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		289233A90DB2D0DB0083E9F9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
+		289233AA0DB2D0DB0083E9F9 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		289233AB0DB2D0DB0083E9F9 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipsideViewController.h; path = Classes/FlipsideViewController.h; sourceTree = "<group>"; };
+		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* BudgetMinderiPhone_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetMinderiPhone_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB923AD0F47512900951700 /* BudgetMinderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetMinderModel.h; sourceTree = "<group>"; };
+		ACB923AE0F47512900951700 /* BudgetMinderWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetMinderWorksheet.h; sourceTree = "<group>"; };
+		ACB923AF0F47512900951700 /* BudgetMinderWorksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetMinderWorksheet.m; sourceTree = "<group>"; };
+		ACB923C40F47517F00951700 /* GDataACLRole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataACLRole.h; sourceTree = "<group>"; };
+		ACB923C50F47517F00951700 /* GDataACLRole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataACLRole.m; sourceTree = "<group>"; };
+		ACB923C60F47517F00951700 /* GDataACLScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataACLScope.h; sourceTree = "<group>"; };
+		ACB923C70F47517F00951700 /* GDataACLScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataACLScope.m; sourceTree = "<group>"; };
+		ACB923C80F47517F00951700 /* GDataEntryACL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataEntryACL.h; sourceTree = "<group>"; };
+		ACB923C90F47517F00951700 /* GDataEntryACL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataEntryACL.m; sourceTree = "<group>"; };
+		ACB923CA0F47517F00951700 /* GDataFeedACL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataFeedACL.h; sourceTree = "<group>"; };
+		ACB923CB0F47517F00951700 /* GDataFeedACL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataFeedACL.m; sourceTree = "<group>"; };
+		ACB923CD0F47517F00951700 /* GDataEntryBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataEntryBase.h; sourceTree = "<group>"; };
+		ACB923CE0F47517F00951700 /* GDataEntryBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataEntryBase.m; sourceTree = "<group>"; };
+		ACB923CF0F47517F00951700 /* GDataEntryEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataEntryEvent.h; sourceTree = "<group>"; };
+		ACB923D00F47517F00951700 /* GDataEntryEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataEntryEvent.m; sourceTree = "<group>"; };
+		ACB923D10F47517F00951700 /* GDataEntryMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataEntryMessage.h; sourceTree = "<group>"; };
+		ACB923D20F47517F00951700 /* GDataEntryMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataEntryMessage.m; sourceTree = "<group>"; };
+		ACB923D30F47517F00951700 /* GDataFeedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataFeedBase.h; sourceTree = "<group>"; };
+		ACB923D40F47517F00951700 /* GDataFeedBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataFeedBase.m; sourceTree = "<group>"; };
+		ACB923D50F47517F00951700 /* GDataFeedEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataFeedEvent.h; sourceTree = "<group>"; };
+		ACB923D60F47517F00951700 /* GDataFeedEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataFeedEvent.m; sourceTree = "<group>"; };
+		ACB923D70F47517F00951700 /* GDataFeedMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataFeedMessage.h; sourceTree = "<group>"; };
+		ACB923D80F47517F00951700 /* GDataFeedMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataFeedMessage.m; sourceTree = "<group>"; };
+		ACB923D90F47517F00951700 /* GDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataObject.h; sourceTree = "<group>"; };
+		ACB923DA0F47517F00951700 /* GDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataObject.m; sourceTree = "<group>"; };
+		ACB923DB0F47517F00951700 /* GDataQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataQuery.h; sourceTree = "<group>"; };
+		ACB923DC0F47517F00951700 /* GDataQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataQuery.m; sourceTree = "<group>"; };
+		ACB923DD0F47517F00951700 /* GDataServiceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataServiceBase.h; sourceTree = "<group>"; };
+		ACB923DE0F47517F00951700 /* GDataServiceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataServiceBase.m; sourceTree = "<group>"; };
+		ACB923DF0F47517F00951700 /* GDataServiceGoogle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataServiceGoogle.h; sourceTree = "<group>"; };
+		ACB923E00F47517F00951700 /* GDataServiceGoogle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataServiceGoogle.m; sourceTree = "<group>"; };
+		ACB9247B0F47517F00951700 /* GDataEntrySpreadsheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataEntrySpreadsheet.h; sourceTree = "<group>"; };
+		ACB9247C0F47517F00951700 /* GDataEntrySpreadsheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataEntrySpreadsheet.m; sourceTree = "<group>"; };
+		ACB9247D0F47517F00951700 /* GDataEntrySpreadsheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataEntrySpreadsheetCell.h; sourceTree = "<group>"; };
+		ACB9247E0F47517F00951700 /* GDataEntrySpreadsheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataEntrySpreadsheetCell.m; sourceTree = "<group>"; };
+		ACB9247F0F47517F00951700 /* GDataEntrySpreadsheetList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataEntrySpreadsheetList.h; sourceTree = "<group>"; };
+		ACB924800F47517F00951700 /* GDataEntrySpreadsheetList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataEntrySpreadsheetList.m; sourceTree = "<group>"; };
+		ACB924810F47517F00951700 /* GDataEntryWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataEntryWorksheet.h; sourceTree = "<group>"; };
+		ACB924820F47517F00951700 /* GDataEntryWorksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataEntryWorksheet.m; sourceTree = "<group>"; };
+		ACB924830F47517F00951700 /* GDataFeedSpreadsheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataFeedSpreadsheet.h; sourceTree = "<group>"; };
+		ACB924840F47517F00951700 /* GDataFeedSpreadsheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataFeedSpreadsheet.m; sourceTree = "<group>"; };
+		ACB924850F47517F00951700 /* GDataFeedSpreadsheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataFeedSpreadsheetCell.h; sourceTree = "<group>"; };
+		ACB924860F47517F00951700 /* GDataFeedSpreadsheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataFeedSpreadsheetCell.m; sourceTree = "<group>"; };
+		ACB924870F47517F00951700 /* GDataFeedSpreadsheetList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataFeedSpreadsheetList.h; sourceTree = "<group>"; };
+		ACB924880F47517F00951700 /* GDataFeedSpreadsheetList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataFeedSpreadsheetList.m; sourceTree = "<group>"; };
+		ACB924890F47517F00951700 /* GDataFeedWorksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataFeedWorksheet.h; sourceTree = "<group>"; };
+		ACB9248A0F47517F00951700 /* GDataFeedWorksheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataFeedWorksheet.m; sourceTree = "<group>"; };
+		ACB9248B0F47517F00951700 /* GDataQuerySpreadsheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataQuerySpreadsheet.h; sourceTree = "<group>"; };
+		ACB9248C0F47517F00951700 /* GDataQuerySpreadsheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataQuerySpreadsheet.m; sourceTree = "<group>"; };
+		ACB9248D0F47517F00951700 /* GDataRowColumnCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataRowColumnCount.h; sourceTree = "<group>"; };
+		ACB9248E0F47517F00951700 /* GDataRowColumnCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataRowColumnCount.m; sourceTree = "<group>"; };
+		ACB9248F0F47517F00951700 /* GDataServiceGoogleSpreadsheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataServiceGoogleSpreadsheet.h; sourceTree = "<group>"; };
+		ACB924900F47517F00951700 /* GDataServiceGoogleSpreadsheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataServiceGoogleSpreadsheet.m; sourceTree = "<group>"; };
+		ACB924910F47517F00951700 /* GDataSpreadsheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataSpreadsheet.h; sourceTree = "<group>"; };
+		ACB924920F47517F00951700 /* GDataSpreadsheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataSpreadsheetCell.h; sourceTree = "<group>"; };
+		ACB924930F47517F00951700 /* GDataSpreadsheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataSpreadsheetCell.m; sourceTree = "<group>"; };
+		ACB924940F47517F00951700 /* GDataSpreadsheetCustomElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataSpreadsheetCustomElement.h; sourceTree = "<group>"; };
+		ACB924950F47517F00951700 /* GDataSpreadsheetCustomElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataSpreadsheetCustomElement.m; sourceTree = "<group>"; };
+		ACB924E30F47517F00951700 /* GDataAtomPubControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataAtomPubControl.h; sourceTree = "<group>"; };
+		ACB924E40F47517F00951700 /* GDataAtomPubControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataAtomPubControl.m; sourceTree = "<group>"; };
+		ACB924E50F47517F00951700 /* GDataBaseElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataBaseElements.h; sourceTree = "<group>"; };
+		ACB924E60F47517F00951700 /* GDataBaseElements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataBaseElements.m; sourceTree = "<group>"; };
+		ACB924E70F47517F00951700 /* GDataBatchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataBatchID.h; sourceTree = "<group>"; };
+		ACB924E80F47517F00951700 /* GDataBatchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataBatchID.m; sourceTree = "<group>"; };
+		ACB924E90F47517F00951700 /* GDataBatchInterrupted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataBatchInterrupted.h; sourceTree = "<group>"; };
+		ACB924EA0F47517F00951700 /* GDataBatchInterrupted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataBatchInterrupted.m; sourceTree = "<group>"; };
+		ACB924EB0F47517F00951700 /* GDataBatchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataBatchOperation.h; sourceTree = "<group>"; };
+		ACB924EC0F47517F00951700 /* GDataBatchOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataBatchOperation.m; sourceTree = "<group>"; };
+		ACB924ED0F47517F00951700 /* GDataBatchStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataBatchStatus.h; sourceTree = "<group>"; };
+		ACB924EE0F47517F00951700 /* GDataBatchStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataBatchStatus.m; sourceTree = "<group>"; };
+		ACB924EF0F47517F00951700 /* GDataCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataCategory.h; sourceTree = "<group>"; };
+		ACB924F00F47517F00951700 /* GDataCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataCategory.m; sourceTree = "<group>"; };
+		ACB924F10F47517F00951700 /* GDataComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataComment.h; sourceTree = "<group>"; };
+		ACB924F20F47517F00951700 /* GDataComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataComment.m; sourceTree = "<group>"; };
+		ACB924F30F47517F00951700 /* GDataDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataDateTime.h; sourceTree = "<group>"; };
+		ACB924F40F47517F00951700 /* GDataDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataDateTime.m; sourceTree = "<group>"; };
+		ACB924F50F47517F00951700 /* GDataDeleted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataDeleted.h; sourceTree = "<group>"; };
+		ACB924F60F47517F00951700 /* GDataDeleted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataDeleted.m; sourceTree = "<group>"; };
+		ACB924F70F47517F00951700 /* GDataElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataElements.h; sourceTree = "<group>"; };
+		ACB924F80F47517F00951700 /* GDataEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataEmail.h; sourceTree = "<group>"; };
+		ACB924F90F47517F00951700 /* GDataEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataEmail.m; sourceTree = "<group>"; };
+		ACB924FA0F47517F00951700 /* GDataEntryContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataEntryContent.h; sourceTree = "<group>"; };
+		ACB924FB0F47517F00951700 /* GDataEntryContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataEntryContent.m; sourceTree = "<group>"; };
+		ACB924FC0F47517F00951700 /* GDataEntryLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataEntryLink.h; sourceTree = "<group>"; };
+		ACB924FD0F47517F00951700 /* GDataEntryLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataEntryLink.m; sourceTree = "<group>"; };
+		ACB924FE0F47517F00951700 /* GDataExtendedProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataExtendedProperty.h; sourceTree = "<group>"; };
+		ACB924FF0F47517F00951700 /* GDataExtendedProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataExtendedProperty.m; sourceTree = "<group>"; };
+		ACB925000F47517F00951700 /* GDataFeedLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataFeedLink.h; sourceTree = "<group>"; };
+		ACB925010F47517F00951700 /* GDataFeedLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataFeedLink.m; sourceTree = "<group>"; };
+		ACB925020F47517F00951700 /* GDataGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataGenerator.h; sourceTree = "<group>"; };
+		ACB925030F47517F00951700 /* GDataGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataGenerator.m; sourceTree = "<group>"; };
+		ACB925040F47517F00951700 /* GDataGeoPt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataGeoPt.h; sourceTree = "<group>"; };
+		ACB925050F47517F00951700 /* GDataGeoPt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataGeoPt.m; sourceTree = "<group>"; };
+		ACB925060F47517F00951700 /* GDataIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataIM.h; sourceTree = "<group>"; };
+		ACB925070F47517F00951700 /* GDataIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataIM.m; sourceTree = "<group>"; };
+		ACB925080F47517F00951700 /* GDataLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataLink.h; sourceTree = "<group>"; };
+		ACB925090F47517F00951700 /* GDataLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataLink.m; sourceTree = "<group>"; };
+		ACB9250A0F47517F00951700 /* GDataMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataMoney.h; sourceTree = "<group>"; };
+		ACB9250B0F47517F00951700 /* GDataMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataMoney.m; sourceTree = "<group>"; };
+		ACB9250C0F47517F00951700 /* GDataOrganization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataOrganization.h; sourceTree = "<group>"; };
+		ACB9250D0F47517F00951700 /* GDataOrganization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataOrganization.m; sourceTree = "<group>"; };
+		ACB9250E0F47517F00951700 /* GDataOriginalEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataOriginalEvent.h; sourceTree = "<group>"; };
+		ACB9250F0F47517F00951700 /* GDataOriginalEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataOriginalEvent.m; sourceTree = "<group>"; };
+		ACB925100F47517F00951700 /* GDataPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataPerson.h; sourceTree = "<group>"; };
+		ACB925110F47517F00951700 /* GDataPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataPerson.m; sourceTree = "<group>"; };
+		ACB925120F47517F00951700 /* GDataPhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataPhoneNumber.h; sourceTree = "<group>"; };
+		ACB925130F47517F00951700 /* GDataPhoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataPhoneNumber.m; sourceTree = "<group>"; };
+		ACB925140F47517F00951700 /* GDataPostalAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataPostalAddress.h; sourceTree = "<group>"; };
+		ACB925150F47517F00951700 /* GDataPostalAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataPostalAddress.m; sourceTree = "<group>"; };
+		ACB925160F47517F00951700 /* GDataRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataRating.h; sourceTree = "<group>"; };
+		ACB925170F47517F00951700 /* GDataRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataRating.m; sourceTree = "<group>"; };
+		ACB925180F47517F00951700 /* GDataRecurrence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataRecurrence.h; sourceTree = "<group>"; };
+		ACB925190F47517F00951700 /* GDataRecurrence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataRecurrence.m; sourceTree = "<group>"; };
+		ACB9251A0F47517F00951700 /* GDataRecurrenceException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataRecurrenceException.h; sourceTree = "<group>"; };
+		ACB9251B0F47517F00951700 /* GDataRecurrenceException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataRecurrenceException.m; sourceTree = "<group>"; };
+		ACB9251C0F47517F00951700 /* GDataReminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataReminder.h; sourceTree = "<group>"; };
+		ACB9251D0F47517F00951700 /* GDataReminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataReminder.m; sourceTree = "<group>"; };
+		ACB9251E0F47517F00951700 /* GDataTextConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataTextConstruct.h; sourceTree = "<group>"; };
+		ACB9251F0F47517F00951700 /* GDataTextConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataTextConstruct.m; sourceTree = "<group>"; };
+		ACB925200F47517F00951700 /* GDataValueConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataValueConstruct.h; sourceTree = "<group>"; };
+		ACB925210F47517F00951700 /* GDataValueConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataValueConstruct.m; sourceTree = "<group>"; };
+		ACB925220F47517F00951700 /* GDataWhen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataWhen.h; sourceTree = "<group>"; };
+		ACB925230F47517F00951700 /* GDataWhen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataWhen.m; sourceTree = "<group>"; };
+		ACB925240F47517F00951700 /* GDataWhere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataWhere.h; sourceTree = "<group>"; };
+		ACB925250F47517F00951700 /* GDataWhere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataWhere.m; sourceTree = "<group>"; };
+		ACB925260F47517F00951700 /* GDataWho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataWho.h; sourceTree = "<group>"; };
+		ACB925270F47517F00951700 /* GDataWho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataWho.m; sourceTree = "<group>"; };
+		ACB926020F47518000951700 /* GData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GData.h; sourceTree = "<group>"; };
+		ACB926060F47518000951700 /* GDataDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataDefines.h; sourceTree = "<group>"; };
+		ACB926070F47518000951700 /* GDataFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataFramework.h; sourceTree = "<group>"; };
+		ACB926080F47518000951700 /* GDataFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataFramework.m; sourceTree = "<group>"; };
+		ACB926090F47518000951700 /* GDataUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataUtilities.h; sourceTree = "<group>"; };
+		ACB9260A0F47518000951700 /* GDataUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataUtilities.m; sourceTree = "<group>"; };
+		ACB926240F47518000951700 /* GDataGatherInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataGatherInputStream.h; sourceTree = "<group>"; };
+		ACB926250F47518000951700 /* GDataGatherInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataGatherInputStream.m; sourceTree = "<group>"; };
+		ACB926260F47518000951700 /* GDataHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataHTTPFetcher.h; sourceTree = "<group>"; };
+		ACB926270F47518000951700 /* GDataHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataHTTPFetcher.m; sourceTree = "<group>"; };
+		ACB926280F47518000951700 /* GDataHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataHTTPFetcherLogging.h; sourceTree = "<group>"; };
+		ACB926290F47518000951700 /* GDataHTTPFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataHTTPFetcherLogging.m; sourceTree = "<group>"; };
+		ACB9262A0F47518000951700 /* GDataMIMEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataMIMEDocument.h; sourceTree = "<group>"; };
+		ACB9262B0F47518000951700 /* GDataMIMEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataMIMEDocument.m; sourceTree = "<group>"; };
+		ACB9262C0F47518000951700 /* GDataProgressMonitorInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataProgressMonitorInputStream.h; sourceTree = "<group>"; };
+		ACB9262D0F47518000951700 /* GDataProgressMonitorInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataProgressMonitorInputStream.m; sourceTree = "<group>"; };
+		ACB926720F47518000951700 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		ACB926730F47518000951700 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		ACB92DB20F47599500951700 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
+				ACB92DB30F47599500951700 /* libxml2.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Application Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				289233AA0DB2D0DB0083E9F9 /* RootViewController.h */,
+				289233AB0DB2D0DB0083E9F9 /* RootViewController.m */,
+				1D3623240D0F684500981E51 /* BudgetMinderiPhoneAppDelegate.h */,
+				1D3623250D0F684500981E51 /* BudgetMinderiPhoneAppDelegate.m */,
+			);
+			name = "Application Controllers";
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* BudgetMinderiPhone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		281C6CD70DB2D82200F60ACC /* Flipside View */ = {
+			isa = PBXGroup;
+			children = (
+				289233A20DB2D0840083E9F9 /* FlipsideView.h */,
+				289233A30DB2D0840083E9F9 /* FlipsideView.m */,
+				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
+				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
+			);
+			name = "Flipside View";
+			sourceTree = "<group>";
+		};
+		289233A00DB2D0730083E9F9 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				289233A40DB2D0840083E9F9 /* MainView.h */,
+				289233A50DB2D0840083E9F9 /* MainView.m */,
+				289233A80DB2D0DB0083E9F9 /* MainViewController.h */,
+				289233A90DB2D0DB0083E9F9 /* MainViewController.m */,
+			);
+			name = "Main View";
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				ACB923C20F47517F00951700 /* GData */,
+				ACB923AC0F47512900951700 /* BudgetMinderCommon */,
+				289233A00DB2D0730083E9F9 /* Main View */,
+				281C6CD70DB2D82200F60ACC /* Flipside View */,
+				080E96DDFE201D6D7F000001 /* Application Controllers */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* BudgetMinderiPhone_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
+				280E754B0DD40C5E005A515E /* MainView.xib */,
+				280E754C0DD40C5E005A515E /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACB92DB20F47599500951700 /* libxml2.2.dylib */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765580DF743DE002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACB923AC0F47512900951700 /* BudgetMinderCommon */ = {
+			isa = PBXGroup;
+			children = (
+				ACB923AD0F47512900951700 /* BudgetMinderModel.h */,
+				ACB923AE0F47512900951700 /* BudgetMinderWorksheet.h */,
+				ACB923AF0F47512900951700 /* BudgetMinderWorksheet.m */,
+			);
+			name = BudgetMinderCommon;
+			path = ../BudgetMinderCommon;
+			sourceTree = SOURCE_ROOT;
+		};
+		ACB923C20F47517F00951700 /* GData */ = {
+			isa = PBXGroup;
+			children = (
+				ACB923C30F47517F00951700 /* ACL */,
+				ACB923CC0F47517F00951700 /* BaseClasses */,
+				ACB923E10F47517F00951700 /* Clients */,
+				ACB924E20F47517F00951700 /* Elements */,
+				ACB926020F47518000951700 /* GData.h */,
+				ACB926060F47518000951700 /* GDataDefines.h */,
+				ACB926070F47518000951700 /* GDataFramework.h */,
+				ACB926080F47518000951700 /* GDataFramework.m */,
+				ACB926090F47518000951700 /* GDataUtilities.h */,
+				ACB9260A0F47518000951700 /* GDataUtilities.m */,
+				ACB926230F47518000951700 /* Networking */,
+				ACB926710F47518000951700 /* XMLSupport */,
+			);
+			name = GData;
+			path = ../GData;
+			sourceTree = SOURCE_ROOT;
+		};
+		ACB923C30F47517F00951700 /* ACL */ = {
+			isa = PBXGroup;
+			children = (
+				ACB923C40F47517F00951700 /* GDataACLRole.h */,
+				ACB923C50F47517F00951700 /* GDataACLRole.m */,
+				ACB923C60F47517F00951700 /* GDataACLScope.h */,
+				ACB923C70F47517F00951700 /* GDataACLScope.m */,
+				ACB923C80F47517F00951700 /* GDataEntryACL.h */,
+				ACB923C90F47517F00951700 /* GDataEntryACL.m */,
+				ACB923CA0F47517F00951700 /* GDataFeedACL.h */,
+				ACB923CB0F47517F00951700 /* GDataFeedACL.m */,
+			);
+			path = ACL;
+			sourceTree = "<group>";
+		};
+		ACB923CC0F47517F00951700 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				ACB923CD0F47517F00951700 /* GDataEntryBase.h */,
+				ACB923CE0F47517F00951700 /* GDataEntryBase.m */,
+				ACB923CF0F47517F00951700 /* GDataEntryEvent.h */,
+				ACB923D00F47517F00951700 /* GDataEntryEvent.m */,
+				ACB923D10F47517F00951700 /* GDataEntryMessage.h */,
+				ACB923D20F47517F00951700 /* GDataEntryMessage.m */,
+				ACB923D30F47517F00951700 /* GDataFeedBase.h */,
+				ACB923D40F47517F00951700 /* GDataFeedBase.m */,
+				ACB923D50F47517F00951700 /* GDataFeedEvent.h */,
+				ACB923D60F47517F00951700 /* GDataFeedEvent.m */,
+				ACB923D70F47517F00951700 /* GDataFeedMessage.h */,
+				ACB923D80F47517F00951700 /* GDataFeedMessage.m */,
+				ACB923D90F47517F00951700 /* GDataObject.h */,
+				ACB923DA0F47517F00951700 /* GDataObject.m */,
+				ACB923DB0F47517F00951700 /* GDataQuery.h */,
+				ACB923DC0F47517F00951700 /* GDataQuery.m */,
+				ACB923DD0F47517F00951700 /* GDataServiceBase.h */,
+				ACB923DE0F47517F00951700 /* GDataServiceBase.m */,
+				ACB923DF0F47517F00951700 /* GDataServiceGoogle.h */,
+				ACB923E00F47517F00951700 /* GDataServiceGoogle.m */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		ACB923E10F47517F00951700 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				ACB9247A0F47517F00951700 /* Spreadsheets */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		ACB9247A0F47517F00951700 /* Spreadsheets */ = {
+			isa = PBXGroup;
+			children = (
+				ACB9247B0F47517F00951700 /* GDataEntrySpreadsheet.h */,
+				ACB9247C0F47517F00951700 /* GDataEntrySpreadsheet.m */,
+				ACB9247D0F47517F00951700 /* GDataEntrySpreadsheetCell.h */,
+				ACB9247E0F47517F00951700 /* GDataEntrySpreadsheetCell.m */,
+				ACB9247F0F47517F00951700 /* GDataEntrySpreadsheetList.h */,
+				ACB924800F47517F00951700 /* GDataEntrySpreadsheetList.m */,
+				ACB924810F47517F00951700 /* GDataEntryWorksheet.h */,
+				ACB924820F47517F00951700 /* GDataEntryWorksheet.m */,
+				ACB924830F47517F00951700 /* GDataFeedSpreadsheet.h */,
+				ACB924840F47517F00951700 /* GDataFeedSpreadsheet.m */,
+				ACB924850F47517F00951700 /* GDataFeedSpreadsheetCell.h */,
+				ACB924860F47517F00951700 /* GDataFeedSpreadsheetCell.m */,
+				ACB924870F47517F00951700 /* GDataFeedSpreadsheetList.h */,
+				ACB924880F47517F00951700 /* GDataFeedSpreadsheetList.m */,
+				ACB924890F47517F00951700 /* GDataFeedWorksheet.h */,
+				ACB9248A0F47517F00951700 /* GDataFeedWorksheet.m */,
+				ACB9248B0F47517F00951700 /* GDataQuerySpreadsheet.h */,
+				ACB9248C0F47517F00951700 /* GDataQuerySpreadsheet.m */,
+				ACB9248D0F47517F00951700 /* GDataRowColumnCount.h */,
+				ACB9248E0F47517F00951700 /* GDataRowColumnCount.m */,
+				ACB9248F0F47517F00951700 /* GDataServiceGoogleSpreadsheet.h */,
+				ACB924900F47517F00951700 /* GDataServiceGoogleSpreadsheet.m */,
+				ACB924910F47517F00951700 /* GDataSpreadsheet.h */,
+				ACB924920F47517F00951700 /* GDataSpreadsheetCell.h */,
+				ACB924930F47517F00951700 /* GDataSpreadsheetCell.m */,
+				ACB924940F47517F00951700 /* GDataSpreadsheetCustomElement.h */,
+				ACB924950F47517F00951700 /* GDataSpreadsheetCustomElement.m */,
+			);
+			path = Spreadsheets;
+			sourceTree = "<group>";
+		};
+		ACB924E20F47517F00951700 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				ACB924E30F47517F00951700 /* GDataAtomPubControl.h */,
+				ACB924E40F47517F00951700 /* GDataAtomPubControl.m */,
+				ACB924E50F47517F00951700 /* GDataBaseElements.h */,
+				ACB924E60F47517F00951700 /* GDataBaseElements.m */,
+				ACB924E70F47517F00951700 /* GDataBatchID.h */,
+				ACB924E80F47517F00951700 /* GDataBatchID.m */,
+				ACB924E90F47517F00951700 /* GDataBatchInterrupted.h */,
+				ACB924EA0F47517F00951700 /* GDataBatchInterrupted.m */,
+				ACB924EB0F47517F00951700 /* GDataBatchOperation.h */,
+				ACB924EC0F47517F00951700 /* GDataBatchOperation.m */,
+				ACB924ED0F47517F00951700 /* GDataBatchStatus.h */,
+				ACB924EE0F47517F00951700 /* GDataBatchStatus.m */,
+				ACB924EF0F47517F00951700 /* GDataCategory.h */,
+				ACB924F00F47517F00951700 /* GDataCategory.m */,
+				ACB924F10F47517F00951700 /* GDataComment.h */,
+				ACB924F20F47517F00951700 /* GDataComment.m */,
+				ACB924F30F47517F00951700 /* GDataDateTime.h */,
+				ACB924F40F47517F00951700 /* GDataDateTime.m */,
+				ACB924F50F47517F00951700 /* GDataDeleted.h */,
+				ACB924F60F47517F00951700 /* GDataDeleted.m */,
+				ACB924F70F47517F00951700 /* GDataElements.h */,
+				ACB924F80F47517F00951700 /* GDataEmail.h */,
+				ACB924F90F47517F00951700 /* GDataEmail.m */,
+				ACB924FA0F47517F00951700 /* GDataEntryContent.h */,
+				ACB924FB0F47517F00951700 /* GDataEntryContent.m */,
+				ACB924FC0F47517F00951700 /* GDataEntryLink.h */,
+				ACB924FD0F47517F00951700 /* GDataEntryLink.m */,
+				ACB924FE0F47517F00951700 /* GDataExtendedProperty.h */,
+				ACB924FF0F47517F00951700 /* GDataExtendedProperty.m */,
+				ACB925000F47517F00951700 /* GDataFeedLink.h */,
+				ACB925010F47517F00951700 /* GDataFeedLink.m */,
+				ACB925020F47517F00951700 /* GDataGenerator.h */,
+				ACB925030F47517F00951700 /* GDataGenerator.m */,
+				ACB925040F47517F00951700 /* GDataGeoPt.h */,
+				ACB925050F47517F00951700 /* GDataGeoPt.m */,
+				ACB925060F47517F00951700 /* GDataIM.h */,
+				ACB925070F47517F00951700 /* GDataIM.m */,
+				ACB925080F47517F00951700 /* GDataLink.h */,
+				ACB925090F47517F00951700 /* GDataLink.m */,
+				ACB9250A0F47517F00951700 /* GDataMoney.h */,
+				ACB9250B0F47517F00951700 /* GDataMoney.m */,
+				ACB9250C0F47517F00951700 /* GDataOrganization.h */,
+				ACB9250D0F47517F00951700 /* GDataOrganization.m */,
+				ACB9250E0F47517F00951700 /* GDataOriginalEvent.h */,
+				ACB9250F0F47517F00951700 /* GDataOriginalEvent.m */,
+				ACB925100F47517F00951700 /* GDataPerson.h */,
+				ACB925110F47517F00951700 /* GDataPerson.m */,
+				ACB925120F47517F00951700 /* GDataPhoneNumber.h */,
+				ACB925130F47517F00951700 /* GDataPhoneNumber.m */,
+				ACB925140F47517F00951700 /* GDataPostalAddress.h */,
+				ACB925150F47517F00951700 /* GDataPostalAddress.m */,
+				ACB925160F47517F00951700 /* GDataRating.h */,
+				ACB925170F47517F00951700 /* GDataRating.m */,
+				ACB925180F47517F00951700 /* GDataRecurrence.h */,
+				ACB925190F47517F00951700 /* GDataRecurrence.m */,
+				ACB9251A0F47517F00951700 /* GDataRecurrenceException.h */,
+				ACB9251B0F47517F00951700 /* GDataRecurrenceException.m */,
+				ACB9251C0F47517F00951700 /* GDataReminder.h */,
+				ACB9251D0F47517F00951700 /* GDataReminder.m */,
+				ACB9251E0F47517F00951700 /* GDataTextConstruct.h */,
+				ACB9251F0F47517F00951700 /* GDataTextConstruct.m */,
+				ACB925200F47517F00951700 /* GDataValueConstruct.h */,
+				ACB925210F47517F00951700 /* GDataValueConstruct.m */,
+				ACB925220F47517F00951700 /* GDataWhen.h */,
+				ACB925230F47517F00951700 /* GDataWhen.m */,
+				ACB925240F47517F00951700 /* GDataWhere.h */,
+				ACB925250F47517F00951700 /* GDataWhere.m */,
+				ACB925260F47517F00951700 /* GDataWho.h */,
+				ACB925270F47517F00951700 /* GDataWho.m */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		ACB926230F47518000951700 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				ACB926240F47518000951700 /* GDataGatherInputStream.h */,
+				ACB926250F47518000951700 /* GDataGatherInputStream.m */,
+				ACB926260F47518000951700 /* GDataHTTPFetcher.h */,
+				ACB926270F47518000951700 /* GDataHTTPFetcher.m */,
+				ACB926280F47518000951700 /* GDataHTTPFetcherLogging.h */,
+				ACB926290F47518000951700 /* GDataHTTPFetcherLogging.m */,
+				ACB9262A0F47518000951700 /* GDataMIMEDocument.h */,
+				ACB9262B0F47518000951700 /* GDataMIMEDocument.m */,
+				ACB9262C0F47518000951700 /* GDataProgressMonitorInputStream.h */,
+				ACB9262D0F47518000951700 /* GDataProgressMonitorInputStream.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		ACB926710F47518000951700 /* XMLSupport */ = {
+			isa = PBXGroup;
+			children = (
+				ACB926720F47518000951700 /* GDataXMLNode.h */,
+				ACB926730F47518000951700 /* GDataXMLNode.m */,
+			);
+			path = XMLSupport;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* BudgetMinderiPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BudgetMinderiPhone" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BudgetMinderiPhone;
+			productName = BudgetMinderiPhone;
+			productReference = 1D6058910D05DD3D006BFB54 /* BudgetMinderiPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BudgetMinderiPhone" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* BudgetMinderiPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */,
+				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
+				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* BudgetMinderiPhoneAppDelegate.m in Sources */,
+				289233A60DB2D0840083E9F9 /* FlipsideView.m in Sources */,
+				289233A70DB2D0840083E9F9 /* MainView.m in Sources */,
+				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
+				289233AF0DB2D0DB0083E9F9 /* RootViewController.m in Sources */,
+				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
+				ACB923B00F47512900951700 /* BudgetMinderWorksheet.m in Sources */,
+				ACB926740F47518000951700 /* GDataACLRole.m in Sources */,
+				ACB926750F47518000951700 /* GDataACLScope.m in Sources */,
+				ACB926760F47518000951700 /* GDataEntryACL.m in Sources */,
+				ACB926770F47518000951700 /* GDataFeedACL.m in Sources */,
+				ACB926780F47518000951700 /* GDataEntryBase.m in Sources */,
+				ACB926790F47518000951700 /* GDataEntryEvent.m in Sources */,
+				ACB9267A0F47518000951700 /* GDataEntryMessage.m in Sources */,
+				ACB9267B0F47518000951700 /* GDataFeedBase.m in Sources */,
+				ACB9267C0F47518000951700 /* GDataFeedEvent.m in Sources */,
+				ACB9267D0F47518000951700 /* GDataFeedMessage.m in Sources */,
+				ACB9267E0F47518000951700 /* GDataObject.m in Sources */,
+				ACB9267F0F47518000951700 /* GDataQuery.m in Sources */,
+				ACB926800F47518000951700 /* GDataServiceBase.m in Sources */,
+				ACB926810F47518000951700 /* GDataServiceGoogle.m in Sources */,
+				ACB926C60F47518000951700 /* GDataEntrySpreadsheet.m in Sources */,
+				ACB926C70F47518000951700 /* GDataEntrySpreadsheetCell.m in Sources */,
+				ACB926C80F47518000951700 /* GDataEntrySpreadsheetList.m in Sources */,
+				ACB926C90F47518000951700 /* GDataEntryWorksheet.m in Sources */,
+				ACB926CA0F47518000951700 /* GDataFeedSpreadsheet.m in Sources */,
+				ACB926CB0F47518000951700 /* GDataFeedSpreadsheetCell.m in Sources */,
+				ACB926CC0F47518000951700 /* GDataFeedSpreadsheetList.m in Sources */,
+				ACB926CD0F47518000951700 /* GDataFeedWorksheet.m in Sources */,
+				ACB926CE0F47518000951700 /* GDataQuerySpreadsheet.m in Sources */,
+				ACB926CF0F47518000951700 /* GDataRowColumnCount.m in Sources */,
+				ACB926D00F47518000951700 /* GDataServiceGoogleSpreadsheet.m in Sources */,
+				ACB926D10F47518000951700 /* GDataSpreadsheetCell.m in Sources */,
+				ACB926D20F47518000951700 /* GDataSpreadsheetCustomElement.m in Sources */,
+				ACB926F70F47518000951700 /* GDataAtomPubControl.m in Sources */,
+				ACB926F80F47518000951700 /* GDataBaseElements.m in Sources */,
+				ACB926F90F47518000951700 /* GDataBatchID.m in Sources */,
+				ACB926FA0F47518000951700 /* GDataBatchInterrupted.m in Sources */,
+				ACB926FB0F47518000951700 /* GDataBatchOperation.m in Sources */,
+				ACB926FC0F47518000951700 /* GDataBatchStatus.m in Sources */,
+				ACB926FD0F47518000951700 /* GDataCategory.m in Sources */,
+				ACB926FE0F47518000951700 /* GDataComment.m in Sources */,
+				ACB926FF0F47518000951700 /* GDataDateTime.m in Sources */,
+				ACB927000F47518000951700 /* GDataDeleted.m in Sources */,
+				ACB927010F47518000951700 /* GDataEmail.m in Sources */,
+				ACB927020F47518000951700 /* GDataEntryContent.m in Sources */,
+				ACB927030F47518000951700 /* GDataEntryLink.m in Sources */,
+				ACB927040F47518000951700 /* GDataExtendedProperty.m in Sources */,
+				ACB927050F47518000951700 /* GDataFeedLink.m in Sources */,
+				ACB927060F47518000951700 /* GDataGenerator.m in Sources */,
+				ACB927070F47518000951700 /* GDataGeoPt.m in Sources */,
+				ACB927080F47518000951700 /* GDataIM.m in Sources */,
+				ACB927090F47518000951700 /* GDataLink.m in Sources */,
+				ACB9270A0F47518000951700 /* GDataMoney.m in Sources */,
+				ACB9270B0F47518000951700 /* GDataOrganization.m in Sources */,
+				ACB9270C0F47518000951700 /* GDataOriginalEvent.m in Sources */,
+				ACB9270D0F47518000951700 /* GDataPerson.m in Sources */,
+				ACB9270E0F47518000951700 /* GDataPhoneNumber.m in Sources */,
+				ACB9270F0F47518000951700 /* GDataPostalAddress.m in Sources */,
+				ACB927100F47518000951700 /* GDataRating.m in Sources */,
+				ACB927110F47518000951700 /* GDataRecurrence.m in Sources */,
+				ACB927120F47518000951700 /* GDataRecurrenceException.m in Sources */,
+				ACB927130F47518000951700 /* GDataReminder.m in Sources */,
+				ACB927140F47518000951700 /* GDataTextConstruct.m in Sources */,
+				ACB927150F47518000951700 /* GDataValueConstruct.m in Sources */,
+				ACB927160F47518000951700 /* GDataWhen.m in Sources */,
+				ACB927170F47518000951700 /* GDataWhere.m in Sources */,
+				ACB927180F47518000951700 /* GDataWho.m in Sources */,
+				ACB927850F47518000951700 /* GDataFramework.m in Sources */,
+				ACB927860F47518000951700 /* GDataUtilities.m in Sources */,
+				ACB927920F47518000951700 /* GDataGatherInputStream.m in Sources */,
+				ACB927930F47518000951700 /* GDataHTTPFetcher.m in Sources */,
+				ACB927940F47518000951700 /* GDataHTTPFetcherLogging.m in Sources */,
+				ACB927950F47518000951700 /* GDataMIMEDocument.m in Sources */,
+				ACB927960F47518000951700 /* GDataProgressMonitorInputStream.m in Sources */,
+				ACB927CB0F47518000951700 /* GDataXMLNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BudgetMinderiPhone_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = BudgetMinderiPhone;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BudgetMinderiPhone_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = BudgetMinderiPhone;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.2.1;
+				USER_HEADER_SEARCH_PATHS = "../GData/**";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.2.1;
+				USER_HEADER_SEARCH_PATHS = "../GData/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BudgetMinderiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BudgetMinderiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

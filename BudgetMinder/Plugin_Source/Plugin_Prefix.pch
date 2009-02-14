@@ -1,8 +1,0 @@
-//
-// Prefix header for all source files of the 'BudgetWatchPlugin' target in the 'BudgetWatchPlugin' project.
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-    #import <WebKit/WebKit.h>
-#endif

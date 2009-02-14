@@ -1,18 +1,19 @@
 //
-//  BudgetWatchPluginView.m
-//  BudgetWatchPlugin
+//  BudgetMinderPluginView.m
+//  BudgetMinderPlugin
 //
-//  Created by Mario Aquino on 1/22/09.
+//  Created by Mario Aquino on 2/14/09.
 //  Copyright __MyCompanyName__ 2009. All rights reserved.
 //
 
-#import "BudgetWatchPluginView.h"
+#import "BudgetMinderPluginView.h"
 
-@interface BudgetWatchPluginView (Internal)
+
+@interface BudgetMinderPluginView (Internal)
 - (id)_initWithArguments:(NSDictionary *)arguments;
 @end
 
-@implementation BudgetWatchPluginView
+@implementation BudgetMinderPluginView
 
 // WebPlugInViewFactory protocol
 // The principal class of the plug-in bundle must implement this protocol.
@@ -22,16 +23,6 @@
     return [[[self alloc] _initWithArguments:newArguments] autorelease];
 }
 
-- (void) worksheetFinishedLoading
-{
-	// update ui
-}
-
-- (void) worksheetError: (NSError*) error
-{
-	// message to user
-}
-
 // WebPlugIn informal protocol
 
 - (void)webPlugInInitialize
@@ -39,11 +30,6 @@
     // This method will be only called once per instance of the plug-in object, and will be called
     // before any other methods in the WebPlugIn protocol.
     // You are not required to implement this method.  It may safely be removed.
-	
-	workSheet = [BudgetMinderWorksheet newUsingDelegate: self];
-	workSheet.user = @"lw.mario.test.account@gmail.com";
-	workSheet.password = @"lwchattesting";
-	[workSheet login];
 }
 
 - (void)webPlugInStart
@@ -80,7 +66,7 @@
 
 @end
 
-@implementation BudgetWatchPluginView (Internal)
+@implementation BudgetMinderPluginView (Internal)
 
 - (id)_initWithArguments:(NSDictionary *)newArguments
 {
