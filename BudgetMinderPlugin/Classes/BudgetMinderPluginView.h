@@ -7,10 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import <WebKit/WebKit.h>
+#import "BudgetMinderModel.h"
 
 @interface BudgetMinderPluginView : NSView <WebPlugInViewFactory>
 {
+	NSObject<BudgetMinderModel>* model;
 }
+
+@property (retain, nonatomic) NSObject<BudgetMinderModel>* model;
 
 @end

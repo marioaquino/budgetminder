@@ -8,12 +8,13 @@
 
 #import "BudgetMinderPluginView.h"
 
-
 @interface BudgetMinderPluginView (Internal)
 - (id)_initWithArguments:(NSDictionary *)arguments;
 @end
 
 @implementation BudgetMinderPluginView
+
+@synthesize model;
 
 // WebPlugInViewFactory protocol
 // The principal class of the plug-in bundle must implement this protocol.

@@ -86,7 +86,19 @@
 		ACB92C270F47549600951700 /* GDataUnitTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACB92AC00F47549600951700 /* GDataUnitTests-Info.plist */; };
 		ACB92C570F47549600951700 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB92AFF0F47549600951700 /* GDataXMLNode.m */; };
 		ACB92CD20F47565A00951700 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB92CD10F47565A00951700 /* libxml2.dylib */; };
+		ACB92DF40F47601B00951700 /* BudgetMinderPluginViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB92DF30F47601B00951700 /* BudgetMinderPluginViewTest.m */; };
+		ACB92DF50F47605600951700 /* BudgetMinderPluginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C576FE90428111CA0C5A /* BudgetMinderPluginView.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACB92DEE0F475F2D00951700 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1AC9600486D14A00FE50C9 /* BudgetMinderPlugin */;
+			remoteInfo = BudgetMinderPlugin;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0259C576FE90428111CA0C5A /* BudgetMinderPluginView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = BudgetMinderPluginView.m; path = Classes/BudgetMinderPluginView.m; sourceTree = "<group>"; };
@@ -246,6 +258,9 @@
 		ACB92AFE0F47549600951700 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
 		ACB92AFF0F47549600951700 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 		ACB92CD10F47565A00951700 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		ACB92DE90F475F2500951700 /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB92DEA0F475F2500951700 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		ACB92DF30F47601B00951700 /* BudgetMinderPluginViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BudgetMinderPluginViewTest.m; path = Classes/BudgetMinderPluginViewTest.m; sourceTree = "<group>"; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -260,12 +275,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACB92DE60F475F2500951700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0259C574FE90428111CA0C5A /* BudgetMinderPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				ACB92DF10F475F3F00951700 /* UnitTests */,
 				ACB9284E0F47549600951700 /* GData */,
 				ACB928440F47546400951700 /* BudgetMinderCommon */,
 				32DBCF9E0370C38000C91783 /* Classes */,
@@ -273,6 +296,7 @@
 				0259C582FE90428111CA0C5A /* Resources */,
 				1ED78706FE9D4A0611CA0C5A /* Products */,
 				2E58F364FFB232C311CA0CBA /* Frameworks */,
+				ACB92DEA0F475F2500951700 /* Test-Info.plist */,
 			);
 			name = BudgetMinderPlugin;
 			sourceTree = "<group>";
@@ -290,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1AC9740486D14A00FE50C9 /* BudgetMinderPlugin.webplugin */,
+				ACB92DE90F475F2500951700 /* Test.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -550,6 +575,14 @@
 			path = XMLSupport;
 			sourceTree = "<group>";
 		};
+		ACB92DF10F475F3F00951700 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACB92DF30F47601B00951700 /* BudgetMinderPluginViewTest.m */,
+			);
+			name = UnitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -571,6 +604,25 @@
 			productReference = 8D1AC9740486D14A00FE50C9 /* BudgetMinderPlugin.webplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
+		ACB92DE80F475F2500951700 /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACB92DED0F475F2600951700 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				ACB92DE40F475F2500951700 /* Resources */,
+				ACB92DE50F475F2500951700 /* Sources */,
+				ACB92DE60F475F2500951700 /* Frameworks */,
+				ACB92DE70F475F2500951700 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACB92DEF0F475F2D00951700 /* PBXTargetDependency */,
+			);
+			name = Test;
+			productName = Test;
+			productReference = ACB92DE90F475F2500951700 /* Test.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -584,6 +636,7 @@
 			projectRoot = "";
 			targets = (
 				8D1AC9600486D14A00FE50C9 /* BudgetMinderPlugin */,
+				ACB92DE80F475F2500951700 /* Test */,
 			);
 		};
 /* End PBXProject section */
@@ -601,7 +654,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACB92DE40F475F2500951700 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACB92DE70F475F2500951700 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D1AC96A0486D14A00FE50C9 /* Sources */ = {
@@ -682,7 +758,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACB92DE50F475F2500951700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB92DF40F47601B00951700 /* BudgetMinderPluginViewTest.m in Sources */,
+				ACB92DF50F47605600951700 /* BudgetMinderPluginView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACB92DEF0F475F2D00951700 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1AC9600486D14A00FE50C9 /* BudgetMinderPlugin */;
+			targetProxy = ACB92DEE0F475F2D00951700 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */ = {
@@ -704,6 +797,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		ACB92DEB0F475F2600951700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Test-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					WebKit,
+					"-framework",
+					OCMock,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Test;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		ACB92DEC0F475F2600951700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Test-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					WebKit,
+					"-framework",
+					OCMock,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Test;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C027D11A08A954E7001699E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -762,6 +917,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		ACB92DED0F475F2600951700 /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACB92DEB0F475F2600951700 /* Debug */,
+				ACB92DEC0F475F2600951700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C027D11908A954E7001699E2 /* Build configuration list for PBXNativeTarget "BudgetMinderPlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
