@@ -38,22 +38,22 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-	NSUserDefaults* setttings = [NSUserDefaults standardUserDefaults];
-	self.user.text = [setttings objectForKey: @"user"];
-	self.password.text = [setttings objectForKey: @"password"];
+	NSUserDefaults* settings = [NSUserDefaults standardUserDefaults];
+	self.user.text = [settings objectForKey: @"user"];
+	self.password.text = [settings objectForKey: @"password"];
 }
 
 - (IBAction) userChanged: (id) sender
 {
-	NSUserDefaults* setttings = [NSUserDefaults standardUserDefaults];
-	[setttings setObject: [sender text] forKey: @"user"];
+	NSUserDefaults* settings = [NSUserDefaults standardUserDefaults];
+	[settings setObject: [sender text] forKey: @"user"];
 }
 
 
 - (IBAction) passwordChanged: (id) sender
 {
-	NSUserDefaults* setttings = [NSUserDefaults standardUserDefaults];
-	[setttings setObject: [sender text] forKey: @"password"];
+	NSUserDefaults* settings = [NSUserDefaults standardUserDefaults];
+	[settings setObject: [sender text] forKey: @"password"];
 }
 
 
