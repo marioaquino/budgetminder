@@ -15,10 +15,12 @@
 @synthesize model;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {		
-		NSUserDefaults* setttings = [NSUserDefaults standardUserDefaults];
-		[setttings setObject: @"lw.mario.test.account@gmail.com" forKey: @"user"];
-		[setttings setObject: @"lwchattesting" forKey: @"password"];
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+		
+		//temp
+		NSUserDefaults* settings = [NSUserDefaults standardUserDefaults];
+		[settings setObject: @"lw.mario.test.account@gmail.com" forKey: @"user"];
+		[settings setObject: @"lwchattesting" forKey: @"password"];
 		
 		self.model = [BudgetMinderWorksheet newUsingDelegate: self];
     }
@@ -27,9 +29,9 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-	NSUserDefaults* setttings = [NSUserDefaults standardUserDefaults];
-	model.user = [setttings objectForKey: @"user"];
-	model.password = [setttings objectForKey: @"password"];
+	NSUserDefaults* settings = [NSUserDefaults standardUserDefaults];
+	model.user = [settings objectForKey: @"user"];
+	model.password = [settings objectForKey: @"password"];
 	[model login];
 }
 
