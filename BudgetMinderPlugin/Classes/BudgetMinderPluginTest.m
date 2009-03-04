@@ -9,27 +9,26 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import <OCMock/OCMock.h>
 
-#import "BudgetMinderPluginView.h"
+#import "BudgetMinderPlugin.h"
 
-@interface BudgetMinderPluginViewTest : SenTestCase
+@interface BudgetMinderPluginTest : SenTestCase
 {
-	BudgetMinderPluginView* view;
+	BudgetMinderPlugin* plugin;
 }
 
 @end
 
-@implementation BudgetMinderPluginViewTest
+@implementation BudgetMinderPluginTest
 - (void) setUp
 {
-	NSDictionary* dict = [[NSDictionary alloc]init];
-	view = (BudgetMinderPluginView*)[BudgetMinderPluginView plugInViewWithArguments:dict];
+	plugin = [[BudgetMinderPlugin alloc] initWithWebView:nil];
 }
 
 - (void) testModelProperty
 {
 	NSObject<BudgetMinderModel>* model = [OCMockObject mockForProtocol: @protocol(BudgetMinderModel)];
-	view.model = model;
-	STAssertEqualObjects(model, view.model, nil);
+	plugin.model = model;
+	STAssertEqualObjects(model, plugin.model, nil);
 }
 
 @end

@@ -10,9 +10,11 @@
 #import <WebKit/WebKit.h>
 #import "BudgetMinderModel.h"
 
-@interface BudgetMinderPluginView : NSView <WebPlugInViewFactory>
+@interface BudgetMinderPlugin : NSObject
 {
 	NSObject<BudgetMinderModel>* model;
+	/* Allow us to call JavaScript functions from our plug-in */
+	WebScriptObject *webScriptObject; 
 }
 
 @property (retain, nonatomic) NSObject<BudgetMinderModel>* model;
