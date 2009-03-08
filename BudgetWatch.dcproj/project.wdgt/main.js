@@ -45,6 +45,11 @@ function initMonitors()
     monitorRunning = true;
 }
 
+function iAmHere(param)
+{
+    alert("Heynow, the plugin says: " + param);
+}
+
 //
 // Function: setElementText(elementName, elementValue)
 // Set the text contents of an HTML div
@@ -105,7 +110,7 @@ function setTextField(name, value) {
 //
 function load()
 {
-    dashcode.setupParts();
+//    dashcode.setupParts();
 
     // Get the properties
     updateInterval = +attributes.updateInterval;
@@ -115,6 +120,8 @@ function load()
 
     // Set up command monitors
     initMonitors();
+    
+    
 }
 
 //
@@ -151,6 +158,15 @@ function show()
     if (monitorRunning === false) {
         budgetMonitor.start();
         monitorRunning = true;
+    }
+    
+    if (BudgetMinderPlugin)
+    {
+        alert("There is a plugin");
+        alert("I say: " + BudgetMinderPlugin.FeedMe("Something"));
+        
+    } else {
+        alert("There aint no plugin");
     }
 }
 

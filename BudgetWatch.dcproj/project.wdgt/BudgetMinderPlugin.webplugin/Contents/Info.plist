@@ -6,8 +6,6 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>BudgetMinderPlugin</string>
-	<key>CFBundleIconFile</key>
-	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>com.mario.BudgetMinderPlugin</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -16,15 +14,13 @@
 	<string>BudgetMinderPlugin</string>
 	<key>CFBundlePackageType</key>
 	<string>WBPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
 	<key>NSPrincipalClass</key>
-	<string>BudgetMinderPlugin</string>
-	<key>WebPluginName</key>
 	<string>BudgetMinderPlugin</string>
 	<key>WebPluginDescription</key>
 	<string>Brief description of my plug-in</string>
@@ -40,5 +36,7 @@
 			<string>Name of content type</string>
 		</dict>
 	</dict>
+	<key>WebPluginName</key>
+	<string>BudgetMinderPlugin</string>
 </dict>
 </plist>

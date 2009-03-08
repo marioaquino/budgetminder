@@ -883,9 +883,10 @@
 				GCC_PREFIX_HEADER = BudgetMinderPlugin_Prefix.pch;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Internet Plug-Ins";
+				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
 				PRODUCT_NAME = BudgetMinderPlugin;
 				SDKROOT = macosx10.5;
 				USER_HEADER_SEARCH_PATHS = "../GData/**";

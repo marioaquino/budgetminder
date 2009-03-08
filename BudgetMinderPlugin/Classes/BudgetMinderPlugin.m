@@ -33,6 +33,7 @@ NSString *const kJSSelectorPrefix = @"js_";
 - (id)initWithWebView:(WebView*)webView
 {
 	self = [super init];
+	NSLog(@"Booyakasha!");
 	return self;
 }
 
@@ -70,7 +71,7 @@ NSString *const kJSSelectorPrefix = @"js_";
  */
 - (void)windowScriptObjectAvailable:(WebScriptObject*)scriptObject
 {
-    /* According to this statement, our plug-in will be called as RemindersPlugIn from JavaScript */
+    /* According to this statement, our plug-in will be called as BudgetMinderPlugin from JavaScript */
 	[scriptObject setValue:self forKey:@"BudgetMinderPlugin"];
 	webScriptObject = scriptObject;
 	[webScriptObject retain];
@@ -102,6 +103,17 @@ NSString *const kJSSelectorPrefix = @"js_";
 {
 	return !([NSStringFromSelector(aSelector) hasPrefix:kJSSelectorPrefix]);
 }
+
+-(NSString *)js_FeedMe:(NSString *)food
+{
+	NSLog(food);
+	
+	//Calls JavaScript
+	[webScriptObject evaluateWebScript:@"iAmHere(true)"];
+	
+	return @"Fooey";
+}
+
 
 
 

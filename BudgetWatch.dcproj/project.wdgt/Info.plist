@@ -13,7 +13,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>BudgetWatch</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.mario.widget.BudgetWatch</string>
+	<string>com.mario.BudgetMinderPlugin</string>
 	<key>CFBundleName</key>
 	<string>BudgetWatch</string>
 	<key>CFBundleShortVersionString</key>
@@ -28,6 +28,8 @@
 	<integer>316</integer>
 	<key>MainHTML</key>
 	<string>main.html</string>
+	<key>Plugin</key>
+	<string>BudgetMinderPlugin.webplugin</string>
 	<key>Width</key>
 	<integer>268</integer>
 </dict>

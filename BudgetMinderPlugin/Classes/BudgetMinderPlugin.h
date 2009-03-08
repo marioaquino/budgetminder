@@ -17,6 +17,9 @@
 	WebScriptObject *webScriptObject; 
 }
 
+-(NSString *)js_FeedMe:(NSString *)food;
+
+
 @property (retain, nonatomic) NSObject<BudgetMinderModel>* model;
 
 @end
